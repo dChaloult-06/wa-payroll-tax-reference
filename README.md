@@ -32,7 +32,7 @@ If you don't already have one:
 ### Step 2 — Create a New Repository
 1. Once logged in, click the **+** icon in the top right → **New repository**
 2. Name it: `wa-payroll-tax-reference`
-   - This will become part of your URL, e.g.: `yourusername.github.io/wa-payroll-tax-reference`
+   - This will become part of your URL, e.g.: `dchaloult-06.github.io/wa-payroll-tax-reference`
 3. Set visibility to **Public** (required for free GitHub Pages)
 4. Check **"Add a README file"**
 5. **Leave the license dropdown blank — do not select one**
@@ -54,14 +54,14 @@ If you don't already have one:
 4. Under **Branch**, select **main** and folder **/ (root)**
 5. Click **Save**
 6. Wait 1–2 minutes, then refresh the page
-7. You will see a green banner: **"Your site is live at https://yourusername.github.io/wa-payroll-tax-reference"**
+7. You will see a green banner: **"Your site is live at https://dchaloult-06.github.io/wa-payroll-tax-reference"**
 
 ---
 
 ### Step 5 — Access Your Live Site
 Your tool will be publicly accessible at:
 ```
-https://yourusername.github.io/wa-payroll-tax-reference
+https://dchaloult-06.github.io/wa-payroll-tax-reference
 ```
 
 Share this link anywhere — LinkedIn post, email, resume. Anyone with a browser can access it. No login required.
