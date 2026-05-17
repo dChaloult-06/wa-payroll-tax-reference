@@ -264,16 +264,16 @@ main {
    CHANGE LOG STRIP
    ===================================================== */
 .changes-strip {
-  background: var(--amber-light);
-  border: 1px solid rgba(180,83,9,0.2);
-  border-left: 4px solid var(--amber);
+  background: #F0F5F2;
+  border: 1px solid rgba(92,138,118,0.25);
+  border-left: 4px solid var(--sage);
   border-radius: var(--radius);
   padding: 16px 20px;
   margin-bottom: 28px;
 }
 .changes-strip h3 {
   font-size: 0.9rem;
-  color: var(--amber);
+  color: var(--sage);
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -294,7 +294,7 @@ main {
 }
 .changes-strip ul li::before {
   content: "→";
-  color: var(--amber);
+  color: var(--sage);
   flex-shrink: 0;
   margin-top: 1px;
 }
@@ -1087,8 +1087,6 @@ main {
     <button class="nav-tab" onclick="showTab('nexus', this)">Nexus &amp; Registration</button>
     <button class="nav-tab" onclick="showTab('reciprocity', this)">Reciprocity</button>
     <button class="nav-tab" onclick="showTab('deadlines', this)">Deadlines</button>
-    <button class="nav-tab" onclick="showTab('exemptions', this)">Exemptions</button>
-    <button class="nav-tab" onclick="showTab('calculator', this)">Calculator</button>
     <button class="nav-tab" onclick="showTab('glossary', this)">Glossary</button>
     <button class="nav-tab" onclick="showTab('sources', this)">Sources</button>
     <button class="nav-tab" onclick="showTab('about', this)">About</button>
@@ -1136,7 +1134,7 @@ main {
 
   <div class="changes-strip">
     <h3>
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#B45309" stroke-width="1.5"/><path d="M7 4v3.5L9 9" stroke="#B45309" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#5C8A76" stroke-width="1.5"/><path d="M7 4v3.5L9 9" stroke="#5C8A76" stroke-width="1.5" stroke-linecap="round"/></svg>
       What Changed for 2026
     </h3>
     <ul>
@@ -1278,6 +1276,34 @@ main {
       <div class="card-foot">
         <div class="badge-row">
           <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/payroll-expense-tax" target="_blank" class="agency-badge badge-seattle">Seattle Finance</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="card-head-left">
+          <div class="card-program">Seattle Local Tax <span class="change-badge">Eff. Jan 1, 2025</span></div>
+          <div class="card-name">Seattle Social Housing Tax</div>
+          <div class="card-sub">City of Seattle — Voter-Approved Feb 2025</div>
+        </div>
+        <div class="rate-box amber">
+          <span class="rate-val">5%</span>
+          <span class="rate-lbl">On Comp &gt; $1M / EE</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value amber">5%</span></div>
+        <div class="data-row"><span class="data-label">Threshold</span><span class="data-value">Comp &gt; $1M paid in Seattle per EE</span></div>
+        <div class="data-row"><span class="data-label">Business Payroll Min.</span><span class="data-value teal">None — unlike JumpStart</span></div>
+        <div class="data-row"><span class="data-label">Employee Withholding</span><span class="data-value">None — employer obligation</span></div>
+        <div class="data-row"><span class="data-label">Filing — 2025 (first year)</span><span class="data-value">Annual · due Jan 31, 2026</span></div>
+        <div class="data-row"><span class="data-label">Filing — 2026 onward</span><span class="data-value">Quarterly</span></div>
+        <div class="payer-row"><span class="payer-tag er">Employer Only</span></div>
+      </div>
+      <div class="card-foot">
+        <div class="badge-row">
+          <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/social-housing-tax" target="_blank" class="agency-badge badge-seattle">Seattle Finance</a>
         </div>
       </div>
     </div>
@@ -1604,9 +1630,9 @@ main {
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
-          <div class="card-program">Seattle Local Tax — Recent Enactment</div>
+          <div class="card-program">Seattle Local Tax — SMC 5.37 <span class="change-badge">Eff. Jan 1, 2025</span></div>
           <div class="card-name">Seattle Social Housing Tax</div>
-          <div class="card-sub">City of Seattle</div>
+          <div class="card-sub">City of Seattle — Voter-Approved February 11, 2025</div>
         </div>
         <div class="rate-box amber">
           <span class="rate-val">5%</span>
@@ -1615,19 +1641,25 @@ main {
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value amber">5%</span></div>
-        <div class="data-row"><span class="data-label">Applies To</span><span class="data-value">Employer compensation &gt; $1M per employee</span></div>
-        <div class="data-row"><span class="data-label">Geography</span><span class="data-value">Within Seattle city limits</span></div>
-        <div class="data-row"><span class="data-label">Employee Withholding</span><span class="data-value">None — employer obligation</span></div>
-        <div class="callout warn" style="margin-top:10px">
-          <strong>Recently enacted.</strong> Confirm current effective date, filing requirements, and any legal challenges with Seattle City Finance before assuming applicability.
+        <div class="data-row"><span class="data-label">Applies To</span><span class="data-value">Compensation &gt; $1M per EE in Seattle</span></div>
+        <div class="data-row"><span class="data-label">Business Payroll Minimum</span><span class="data-value teal">None — no minimum threshold</span></div>
+        <div class="data-row"><span class="data-label">Employee Withholding</span><span class="data-value">None — employer obligation only</span></div>
+        <div class="data-row"><span class="data-label">Filing — 2025 (first year)</span><span class="data-value">Annual · due January 31, 2026</span></div>
+        <div class="data-row"><span class="data-label">Filing — 2026 onward</span><span class="data-value">Quarterly</span></div>
+        <div class="data-row"><span class="data-label">Compensation Definition</span><span class="data-value">Same as WA PFML definition</span></div>
+        <div class="callout info" style="margin-top:10px">
+          <strong>Key distinction from JumpStart:</strong> The Social Housing Tax has no minimum business payroll threshold. A business with only one Seattle employee earning over $1M is subject — even if total company payroll is well below the JumpStart threshold. Evaluate independently of JumpStart eligibility.
+        </div>
+        <div class="callout warn" style="margin-top:8px">
+          <strong>Combined exposure:</strong> Businesses subject to both taxes face up to 2.557% JumpStart on compensation up to $1M, plus 5% Social Housing Tax on the portion above $1M — a combined rate of up to 7.557% on high-earner compensation in Seattle.
         </div>
         <div class="payer-row"><span class="payer-tag er">Employer Only</span></div>
       </div>
       <div class="card-foot">
         <div class="badge-row">
-          <a href="https://www.seattle.gov/city-finance" target="_blank" class="agency-badge badge-seattle">Seattle City Finance</a>
+          <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/social-housing-tax" target="_blank" class="agency-badge badge-seattle">Seattle City Finance</a>
         </div>
-        <div class="verified" style="margin-top:8px">Verify status with Seattle Revenue</div>
+        <div class="verified" style="margin-top:8px">Verified May 2026 · Quarterly filing begins 2026</div>
       </div>
     </div>
 
@@ -1748,33 +1780,6 @@ main {
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-head">
-        <div class="card-head-left">
-          <div class="card-program">ESD Reporting Requirement</div>
-          <div class="card-name">SOC Code Requirement</div>
-          <div class="card-sub">WA Employment Security Department</div>
-        </div>
-        <div class="rate-box muted">
-          <span class="rate-val">Required</span>
-          <span class="rate-lbl">Per Employee / Quarter</span>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="data-row"><span class="data-label">Applies To</span><span class="data-value">All ESD quarterly wage reports</span></div>
-        <div class="data-row"><span class="data-label">Programs Covered</span><span class="data-value">SUI, PFML, WA Cares</span></div>
-        <div class="data-row"><span class="data-label">Missing Code Result</span><span class="data-value rose">Filing rejected by ESD</span></div>
-        <div class="callout alert" style="margin-top:10px">
-          <strong>Filing will be rejected</strong> if valid Standard Occupational Classification (SOC) codes are omitted for any reported employee. All three ESD programs (SUI, PFML, WA Cares) share the same quarterly reporting system — a rejected filing affects all three simultaneously.
-        </div>
-      </div>
-      <div class="card-foot">
-        <div class="badge-row">
-          <a href="https://esd.wa.gov/taxes/reporting" target="_blank" class="agency-badge badge-esd">ESD Reporting</a>
-          <a href="https://www.bls.gov/soc/" target="_blank" class="agency-badge badge-irs">BLS SOC Lookup</a>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1848,7 +1853,6 @@ main {
           <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>EAF assessment on the same $78,200 wage base (appears on same tax rate notice)</span></li>
           <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>PFML reporting obligations through the ESD shared system</span></li>
           <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>WA Cares Fund collection and remittance (same quarterly ESD report as of July 2023)</span></li>
-          <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>SOC code reporting requirement — filings rejected without valid codes</span></li>
         </ul>
       </div>
     </div>
@@ -1963,10 +1967,6 @@ main {
     <p>Major filing, deposit, and compliance dates for Washington state programs and federal requirements. ESD quarterly reports cover SUI, PFML, and WA Cares simultaneously.</p>
   </div>
 
-  <div class="callout alert" style="margin-bottom:24px">
-    <strong>SOC Code Reminder:</strong> All ESD quarterly wage reports must include valid Standard Occupational Classification (SOC) codes for every reported employee. Missing codes result in filing rejection — affecting SUI, PFML, and WA Cares reporting simultaneously.
-  </div>
-
   <div class="deadline-list">
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Jan</div><div class="dl-day">31</div></div>
@@ -1985,7 +1985,7 @@ main {
     </div>
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Apr</div><div class="dl-day">30</div></div>
-      <div class="dl-info"><strong>Q1 2026 ESD Quarterly Report + Payment</strong><p>First report at 2026 rates: PFML 1.13%, WA Cares 0.58%, SUI at assigned rate on $78,200 base. Verify SOC codes. <a href="https://esd.wa.gov/employer-taxes" target="_blank">ESD Employer Portal →</a></p></div>
+      <div class="dl-info"><strong>Q1 2026 ESD Quarterly Report + Payment</strong><p>First report at 2026 rates: PFML 1.13%, WA Cares 0.58%, SUI at assigned rate on $78,200 base. <a href="https://esd.wa.gov/employer-taxes" target="_blank">ESD Employer Portal →</a></p></div>
       <span class="dl-tag quarterly">Quarterly</span>
     </div>
     <div class="deadline-item">
@@ -2017,124 +2017,6 @@ main {
       <div class="dl-date"><div class="dl-month">Jan</div><div class="dl-day">31</div></div>
       <div class="dl-info"><strong>Q4 2026 ESD Report + 2026 W-2 / Form 940 Cycle</strong><p>Q4 state program filings due. W-2 furnishing to employees and SSA filing for tax year 2026. Begin applying 2027 rates announced in October.</p></div>
       <span class="dl-tag annual">Annual (2027)</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ EXEMPTIONS -->
-<section class="tab-section" id="tab-exemptions">
-  <div class="section-intro">
-    <h2>Exemptions Reference</h2>
-    <p>Who may be exempt from Washington's state programs, how exemptions are obtained, and what employers must do to remain compliant.</p>
-  </div>
-
-  <div class="callout warn" style="margin-bottom:24px">
-    <strong>Employer reminder:</strong> Employers cannot apply for exemptions on behalf of employees. Employees apply directly through ESD. Once you receive a valid written exemption letter, retain it — ESD does not notify employers of approvals. Stop withholding effective the first day of the quarter after exemption approval. You cannot collect retroactive premiums from exempted employees.
-  </div>
-
-  <div class="cat-label">WA Cares Fund — Exemption Categories (Updated for SB 5291)</div>
-  <div class="card" style="display:block;margin-bottom:24px;">
-    <div class="card-body">
-      <table class="ref-table">
-        <thead><tr><th>Category</th><th>Exempt?</th><th>Key Details</th><th>Authority</th></tr></thead>
-        <tbody>
-          <tr><td>Private LTC Insurance (purchased before Nov 1, 2021)</td><td><span class="yes-pill">Permanent*</span></td><td>Applied by Dec 31, 2022. May opt back in before Jul 1, 2028. No refund of prior premiums.</td><td><a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50B.04.080" target="_blank" class="agency-badge badge-rcw">RCW 50B.04.080</a></td></tr>
-          <tr><td>Primary residence outside Washington</td><td><span class="yes-pill">Yes</span></td><td>Must apply; must notify employer if moving to WA. No future benefit access.</td><td><a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50B.04.080" target="_blank" class="agency-badge badge-rcw">RCW 50B.04.080</a></td></tr>
-          <tr><td>Temporary nonimmigrant visa (H-1B, L-1, TN, etc.)</td><td><span class="yes-pill">Auto-Exempt (Jan 1, 2026)</span></td><td>Automatic per SB 5291 unless employee opts in. Becomes subject upon gaining permanent residency.</td><td><a href="https://app.leg.wa.gov/billsummary?BillNumber=5291&Year=2025" target="_blank" class="agency-badge badge-rcw">SB 5291</a></td></tr>
-          <tr><td>Spouse/domestic partner of active-duty military</td><td><span class="yes-pill">Auto-Exempt</span></td><td>Automatically exempt. Employee must notify employer in writing.</td><td><a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50B.04.080" target="_blank" class="agency-badge badge-rcw">RCW 50B.04.080</a></td></tr>
-          <tr><td>Active-duty military in civilian employment</td><td><span class="yes-pill">Yes — Jan 1, 2026</span></td><td>Must apply for exemption. Must cancel within 90 days of discharge.</td><td><a href="https://app.leg.wa.gov/billsummary?BillNumber=5291&Year=2025" target="_blank" class="agency-badge badge-rcw">SB 5291</a></td></tr>
-          <tr><td>Veterans with 70%+ service-connected disability</td><td><span class="yes-pill">Permanently Exempt</span></td><td>Permanent. Must provide documentation to employer.</td><td><a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50B.04.080" target="_blank" class="agency-badge badge-rcw">RCW 50B.04.080</a></td></tr>
-          <tr><td>Federal employees</td><td><span class="yes-pill">Not Subject</span></td><td>Federal preemption — not subject to WA Cares.</td><td>Federal preemption</td></tr>
-          <tr><td>Tribal business employees</td><td><span class="partial-pill">Tribe Opt-In Required</span></td><td>Only subject if tribe has elected to participate.</td><td><a href="https://wacaresfund.wa.gov" target="_blank" class="agency-badge badge-esd">WA Cares Fund</a></td></tr>
-          <tr><td>Self-employed individuals</td><td><span class="partial-pill">Not Auto-Covered</span></td><td>Must affirmatively opt in to earn benefits. No automatic participation or collection.</td><td><a href="https://wacaresfund.wa.gov" target="_blank" class="agency-badge badge-esd">WA Cares Fund</a></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="cat-label">PFML — Special Employer Situations</div>
-  <div class="card" style="display:block;">
-    <div class="card-body">
-      <table class="ref-table">
-        <thead><tr><th>Scenario</th><th>PFML Treatment</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td>Employer with fewer than 50 employees</td><td><span class="partial-pill">No ER Share Required</span></td><td>Must still collect and remit EE share. Size determined by Sept 30 ESD snapshot.</td></tr>
-          <tr><td>Self-employed — elective opt-in</td><td><span class="partial-pill">EE Share Only</span></td><td>Pay only 71.43% share. Min 3-year commitment. Must opt into both family and medical leave together.</td></tr>
-          <tr><td>Voluntary plan (approved)</td><td><span class="yes-pill">Alternative Compliance</span></td><td>Must be at least as generous as state plan. Filed and administered separately from ESD.</td></tr>
-          <tr><td>Tipped employees</td><td><span class="partial-pill">Wages Only (No Tips)</span></td><td>PFML premiums apply to gross wages excluding tips.</td></tr>
-          <tr><td>Out-of-state employee working in WA</td><td><span class="yes-pill">Subject to PFML</span></td><td>Premiums based on WA-earned wages. Multi-state employees prorate per 4-part test.</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ CALCULATOR -->
-<section class="tab-section" id="tab-calculator">
-  <div class="section-intro">
-    <h2>Washington Payroll Tax Estimator</h2>
-    <p>Estimate combined WA state and federal payroll tax obligations for a single employee. For planning purposes — verify with your payroll system before processing.</p>
-  </div>
-
-  <div class="calc-wrap">
-    <h3>Employee &amp; Employer Inputs</h3>
-    <div class="calc-inputs">
-      <div class="form-group">
-        <label>Annual Gross Wages ($)</label>
-        <input type="number" id="c-wages" value="75000" min="0">
-      </div>
-      <div class="form-group">
-        <label>Pay Period</label>
-        <select id="c-period">
-          <option value="1">Annual</option>
-          <option value="12">Monthly</option>
-          <option value="24">Semi-Monthly</option>
-          <option value="26" selected>Bi-Weekly</option>
-          <option value="52">Weekly</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Employer Size</label>
-        <select id="c-size">
-          <option value="large">50 or more employees</option>
-          <option value="small">Fewer than 50 employees</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>WA Cares Exemption</label>
-        <select id="c-wacares">
-          <option value="no">No — full deduction applies</option>
-          <option value="yes">Yes — approved exemption on file</option>
-        </select>
-      </div>
-      <div>
-        <label class="form-check">
-          <input type="checkbox" id="c-seattle"> Employee works in Seattle (check JumpStart threshold)
-        </label>
-        <label class="form-check" style="margin-top:8px">
-          <input type="checkbox" id="c-addlmed"> Wages likely to exceed $200,000 (Additional Medicare)
-        </label>
-      </div>
-      <div style="display:flex;align-items:flex-end;">
-        <button class="calc-btn" onclick="runCalc()">Calculate Estimates</button>
-      </div>
-    </div>
-
-    <div class="results-area" id="calc-results" style="display:none">
-      <hr style="border:none;border-top:1px solid var(--border);margin-bottom:24px;">
-      <h4>Per-Period Results — <span id="period-lbl"></span></h4>
-      <div class="results-grid" id="period-grid"></div>
-
-      <h4 style="margin-top:24px">Annual Totals</h4>
-      <div class="results-grid" id="annual-grid"></div>
-
-      <div id="seattle-note" class="callout warn" style="margin-top:16px;display:none">
-        <strong>Seattle JumpStart:</strong> This calculator cannot determine JumpStart liability — it depends on your total business payroll (≥ $9.07M threshold), not individual employee wages. If your annual payroll meets the threshold and this employee's compensation exceeds $194,452, JumpStart applies at 0.746%–2.557%. File annually with Seattle City Finance.
-      </div>
-
-      <div class="callout note" style="margin-top:12px">
-        <strong>Disclaimer:</strong> Estimates only. Does not account for W-4 elections, pre-tax deductions, actual L&I risk class rates, or individual exemption documentation. Validate with your payroll system and consult a qualified tax advisor for compliance decisions.
-      </div>
     </div>
   </div>
 </section>
