@@ -32,7 +32,7 @@ any browser on any device.
 
 ## What It Covers
 
-The tool is organized into 12 sections, accessible from the navigation bar
+The tool is organized into 10 sections, accessible from the navigation bar
 at the top of the page.
 
 ---
@@ -43,6 +43,9 @@ Includes a "What Changed for 2026" section highlighting every rate change,
 legislative update, and new program effective this year. Start here if you
 need a quick orientation to the Washington payroll tax landscape.
 
+Program summary cards cover every major obligation including both Seattle
+local taxes — JumpStart and the Social Housing Tax.
+
 ---
 
 ### State Taxes
@@ -50,9 +53,13 @@ Detailed reference cards for each Washington state program:
 
 **State Unemployment Insurance (SUI)**
 Experience-rated employer tax. 2026 rate range: 0.27%–6.02% on a $78,200
-wage base. New employers default to 115% of their industry average. The
-Employment Administration Fund (EAF) add-on (~0.03%) appears as a separate
-line on the ESD tax rate notice and is covered here as a distinct item.
+wage base. New employers default to 115% of their industry average.
+
+**Employment Administration Fund (EAF)**
+A separate ~0.03% add-on to the SUI rate, appearing as its own line on
+the ESD annual tax rate determination notice. Shares the same $78,200
+wage base as SUI. Covered here as a distinct item because it is often
+overlooked in standard rate lookups.
 
 **Paid Family & Medical Leave (PFML)**
 1.13% total premium in 2026 (up from 0.92% in 2025), on wages up to
@@ -77,11 +84,21 @@ Washington does not impose traditional local income tax withholding.
 However, Seattle employers may be subject to:
 
 **JumpStart Payroll Expense Tax** — applies to businesses with annual
-payroll of $9.07M or more, on employee compensation of $194,452 or more.
-Tiered employer expense tax at 0.746%–2.557%. Not withheld from employees.
+payroll meeting the threshold (inflation-adjusted annually; verify with
+Seattle City Finance), on employee compensation above the individual
+threshold. Tiered employer expense tax at 0.746%–2.557%. Not withheld
+from employees.
 
 **Seattle Social Housing Tax** — 5% employer tax on compensation exceeding
-$1M per employee within Seattle city limits.
+$1M per employee within Seattle city limits. Effective January 1, 2025.
+Important distinction: unlike JumpStart, there is no minimum business
+payroll threshold — a business with even one Seattle employee earning over
+$1M is subject regardless of total company payroll size.
+
+**Combined exposure note:** Businesses subject to both taxes face JumpStart
+rates on compensation up to $1M, plus the 5% Social Housing Tax on the
+portion above $1M — a combined rate of up to 7.557% on high-earner
+compensation in Seattle.
 
 **Seattle E-Work Tax** — subject to phase-out/suspension; verify current
 status with Seattle City Finance before assuming it does not apply.
@@ -92,12 +109,13 @@ status with Seattle City Finance before assuming it does not apply.
 Additional Washington tax programs relevant to payroll context:
 
 - **Capital Gains Tax (7%)** — not a payroll withholding obligation, but
-  relevant for employees with equity compensation
+  relevant for employees with equity compensation. Threshold: $270,000
+  in long-term capital gains. Does not apply to RSU vests, which are
+  taxed as ordinary income.
 - **Business & Occupation (B&O) Tax** — employer gross receipts tax;
-  not payroll-withheld but may be triggered by payroll registration
-- **SOC Code Requirement** — ESD quarterly wage reports require a valid
-  Standard Occupational Classification code for every employee;
-  missing codes result in filing rejection
+  not payroll-withheld but may be triggered by payroll registration.
+  See the Nexus & Registration tab for the important connection between
+  voluntary payroll registration and B&O exposure.
 
 ---
 
@@ -137,31 +155,6 @@ Key 2026 filing and deposit deadlines for all Washington programs and
 applicable federal requirements. Includes the ESD September 30 employer
 size snapshot date (which determines whether the PFML employer share
 applies in the following year).
-
----
-
-### Exemptions
-Full reference tables for:
-
-- **WA Cares Fund exemptions** — 9 categories including 2026 SB 5291
-  updates (automatic exemption for temporary visa holders, active-duty
-  military, out-of-state coverage continuation)
-- **PFML special situations** — small employers, voluntary plans, tipped
-  employees, out-of-state employees working in Washington
-
-Includes employer action notes — what documentation to retain and when to
-stop withholding.
-
----
-
-### Calculator
-An interactive estimator for per-period and annual Washington payroll tax
-obligations for a single employee. Inputs include annual wages, pay period,
-employer size, WA Cares exemption status, and a Seattle employee flag.
-
-**For planning purposes only.** The calculator does not account for W-4
-elections, pre-tax deductions, actual L&I risk class rates, or individual
-exemption documentation. Validate results with your payroll system.
 
 ---
 
