@@ -10,38 +10,36 @@
 <style>
 /* =====================================================
    DESIGN TOKENS
-   ===================================================== */
+===================================================== */
 :root {
-  --cream:        #F7F6F2;
-  --white:        #FFFFFF;
-  --teal-deep:    #1F6B5F;
-  --teal-mid:     #2A8070;
-  --teal-light:   #E8F4F1;
-  --teal-xlight:  #F0F8F6;
-  --sage:         #5C8A76;
-  --sage-light:   #EBF2EE;
-  --navy:         #1A2B3C;
-  --body:         #374151;
-  --muted:        #6B7280;
-  --border:       #DDE3DC;
+  --cream: #F7F6F2;
+  --white: #FFFFFF;
+  --teal-deep: #1F6B5F;
+  --teal-mid: #2A8070;
+  --teal-light: #E8F4F1;
+  --teal-xlight: #F0F8F6;
+  --sage: #5C8A76;
+  --sage-light: #EBF2EE;
+  --navy: #1A2B3C;
+  --body: #374151;
+  --muted: #6B7280;
+  --border: #DDE3DC;
   --border-light: #EEF1EE;
-  --amber:        #B45309;
-  --amber-light:  #FEF3C7;
-  --rose:         #9B1C1C;
-  --rose-light:   #FEE2E2;
-  --shadow-sm:    0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md:    0 4px 12px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.04);
-  --radius:       8px;
-  --radius-lg:    12px;
+  --amber: #B45309;
+  --amber-light: #FEF3C7;
+  --rose: #9B1C1C;
+  --rose-light: #FEE2E2;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.04);
+  --radius: 8px;
+  --radius-lg: 12px;
 }
 
 /* =====================================================
    RESET & BASE
-   ===================================================== */
+===================================================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
-
 body {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 16px;
@@ -50,19 +48,17 @@ body {
   background: var(--cream);
   min-height: 100vh;
 }
-
 h1, h2, h3, h4 {
   font-family: 'Lora', serif;
   color: var(--navy);
   line-height: 1.25;
 }
-
 a { color: var(--teal-deep); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* =====================================================
    HEADER
-   ===================================================== */
+===================================================== */
 .site-header {
   background: var(--white);
   border-bottom: 2px solid var(--teal-deep);
@@ -72,7 +68,6 @@ a:hover { text-decoration: underline; }
   z-index: 200;
   box-shadow: var(--shadow-sm);
 }
-
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -82,8 +77,6 @@ a:hover { text-decoration: underline; }
   padding: 14px 0;
   gap: 20px;
 }
-
-.header-brand {}
 .header-brand h1 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -98,14 +91,12 @@ a:hover { text-decoration: underline; }
   margin-top: 1px;
   letter-spacing: 0.02em;
 }
-
 .header-meta {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
 }
-
 .year-badge {
   background: var(--teal-light);
   color: var(--teal-deep);
@@ -117,7 +108,6 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
 .employer-toggle {
   display: flex;
   align-items: center;
@@ -141,7 +131,7 @@ a:hover { text-decoration: underline; }
 
 /* =====================================================
    NAV TABS
-   ===================================================== */
+===================================================== */
 .nav-bar {
   background: var(--white);
   border-bottom: 1px solid var(--border);
@@ -150,7 +140,6 @@ a:hover { text-decoration: underline; }
   top: 69px;
   z-index: 190;
 }
-
 .nav-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -160,7 +149,6 @@ a:hover { text-decoration: underline; }
   scrollbar-width: none;
 }
 .nav-inner::-webkit-scrollbar { display: none; }
-
 .nav-tab {
   background: none;
   border: none;
@@ -184,16 +172,14 @@ a:hover { text-decoration: underline; }
 
 /* =====================================================
    MAIN LAYOUT
-   ===================================================== */
+===================================================== */
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 36px 48px 80px;
 }
-
 .tab-section { display: none; }
 .tab-section.active { display: block; }
-
 .section-intro {
   margin-bottom: 32px;
   padding-bottom: 24px;
@@ -211,7 +197,7 @@ main {
 
 /* =====================================================
    CATEGORY LABEL
-   ===================================================== */
+===================================================== */
 .cat-label {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 0.68rem;
@@ -225,8 +211,8 @@ main {
 .cat-label:first-of-type { margin-top: 0; }
 
 /* =====================================================
-   SUMMARY BAR (Overview)
-   ===================================================== */
+   SUMMARY BAR
+===================================================== */
 .summary-bar {
   background: var(--teal-deep);
   border-radius: var(--radius-lg);
@@ -236,7 +222,6 @@ main {
   margin-bottom: 32px;
   overflow: hidden;
 }
-
 .summary-stat {
   flex: 1;
   text-align: center;
@@ -262,7 +247,7 @@ main {
 
 /* =====================================================
    CHANGE LOG STRIP
-   ===================================================== */
+===================================================== */
 .changes-strip {
   background: #F0F5F2;
   border: 1px solid rgba(92,138,118,0.25);
@@ -301,21 +286,14 @@ main {
 
 /* =====================================================
    CARDS
-   ===================================================== */
+===================================================== */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 18px;
 }
-
-.card-grid.two-col {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.card-grid.one-col {
-  grid-template-columns: 1fr;
-}
-
+.card-grid.two-col { grid-template-columns: repeat(2, 1fr); }
+.card-grid.one-col { grid-template-columns: 1fr; }
 .card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -324,12 +302,8 @@ main {
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s, transform 0.15s;
 }
-.card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
-}
+.card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
 .card.full-span { grid-column: 1 / -1; }
-
 .card-head {
   padding: 18px 20px 14px;
   border-bottom: 1px solid var(--border-light);
@@ -338,9 +312,7 @@ main {
   justify-content: space-between;
   gap: 14px;
 }
-
 .card-head-left { flex: 1; min-width: 0; }
-
 .card-program {
   font-size: 0.67rem;
   font-weight: 600;
@@ -349,7 +321,6 @@ main {
   color: var(--teal-mid);
   margin-bottom: 4px;
 }
-
 .card-name {
   font-family: 'Lora', serif;
   font-size: 1.05rem;
@@ -357,13 +328,11 @@ main {
   color: var(--navy);
   line-height: 1.2;
 }
-
 .card-sub {
   font-size: 0.75rem;
   color: var(--muted);
   margin-top: 3px;
 }
-
 .rate-box {
   background: var(--teal-xlight);
   border: 1px solid rgba(31,107,95,0.15);
@@ -388,21 +357,11 @@ main {
   display: block;
   line-height: 1.3;
 }
-
-.rate-box.amber {
-  background: var(--amber-light);
-  border-color: rgba(180,83,9,0.15);
-}
+.rate-box.amber { background: var(--amber-light); border-color: rgba(180,83,9,0.15); }
 .rate-box.amber .rate-val { color: var(--amber); }
-
-.rate-box.muted {
-  background: var(--cream);
-  border-color: var(--border);
-}
+.rate-box.muted { background: var(--cream); border-color: var(--border); }
 .rate-box.muted .rate-val { color: var(--muted); font-size: 0.95rem; }
-
 .card-body { padding: 16px 20px; }
-
 .data-row {
   display: flex;
   justify-content: space-between;
@@ -414,19 +373,14 @@ main {
 }
 .data-row:last-of-type { border-bottom: none; }
 .data-label { color: var(--muted); flex: 1; }
-.data-value {
-  font-weight: 600;
-  color: var(--navy);
-  text-align: right;
-  white-space: nowrap;
-}
+.data-value { font-weight: 600; color: var(--navy); text-align: right; white-space: nowrap; }
 .data-value.teal { color: var(--teal-deep); }
 .data-value.amber { color: var(--amber); }
 .data-value.rose { color: var(--rose); }
 
 /* =====================================================
    PAYER TAGS
-   ===================================================== */
+===================================================== */
 .payer-row {
   display: flex;
   align-items: center;
@@ -434,7 +388,6 @@ main {
   margin-top: 12px;
   flex-wrap: wrap;
 }
-
 .payer-tag {
   font-size: 0.67rem;
   font-weight: 600;
@@ -444,32 +397,19 @@ main {
   border-radius: 20px;
   border: 1px solid;
 }
-.payer-tag.ee {
-  color: var(--teal-deep);
-  background: var(--teal-light);
-  border-color: rgba(31,107,95,0.25);
-}
-.payer-tag.er {
-  color: var(--amber);
-  background: var(--amber-light);
-  border-color: rgba(180,83,9,0.2);
-}
-.payer-tag.both {
-  color: var(--sage);
-  background: var(--sage-light);
-  border-color: rgba(92,138,118,0.25);
-}
+.payer-tag.ee { color: var(--teal-deep); background: var(--teal-light); border-color: rgba(31,107,95,0.25); }
+.payer-tag.er { color: var(--amber); background: var(--amber-light); border-color: rgba(180,83,9,0.2); }
+.payer-tag.both { color: var(--sage); background: var(--sage-light); border-color: rgba(92,138,118,0.25); }
 
 /* =====================================================
    AGENCY BADGES
-   ===================================================== */
+===================================================== */
 .badge-row {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
   margin-top: 8px;
 }
-
 .agency-badge {
   display: inline-flex;
   align-items: center;
@@ -485,53 +425,22 @@ main {
   cursor: pointer;
 }
 .agency-badge:hover { opacity: 0.8; text-decoration: none; }
-
-.badge-esd {
-  background: #E8F0FE;
-  color: #1A56DB;
-  border-color: rgba(26,86,219,0.2);
-}
-.badge-lni {
-  background: #FDF2F8;
-  color: #9D174D;
-  border-color: rgba(157,23,77,0.2);
-}
-.badge-seattle {
-  background: #FFF8E6;
-  color: #B45309;
-  border-color: rgba(180,83,9,0.2);
-}
-.badge-rcw {
-  background: var(--teal-light);
-  color: var(--teal-deep);
-  border-color: rgba(31,107,95,0.2);
-}
-.badge-dor {
-  background: var(--sage-light);
-  color: var(--sage);
-  border-color: rgba(92,138,118,0.2);
-}
-.badge-irs {
-  background: #F0FDF4;
-  color: #166534;
-  border-color: rgba(22,101,52,0.2);
-}
-.badge-ssa {
-  background: #F5F3FF;
-  color: #5B21B6;
-  border-color: rgba(91,33,182,0.2);
-}
+.badge-esd { background: #E8F0FE; color: #1A56DB; border-color: rgba(26,86,219,0.2); }
+.badge-lni { background: #FDF2F8; color: #9D174D; border-color: rgba(157,23,77,0.2); }
+.badge-seattle { background: #FFF8E6; color: #B45309; border-color: rgba(180,83,9,0.2); }
+.badge-rcw { background: var(--teal-light); color: var(--teal-deep); border-color: rgba(31,107,95,0.2); }
+.badge-dor { background: var(--sage-light); color: var(--sage); border-color: rgba(92,138,118,0.2); }
+.badge-irs { background: #F0FDF4; color: #166534; border-color: rgba(22,101,52,0.2); }
+.badge-ssa { background: #F5F3FF; color: #5B21B6; border-color: rgba(91,33,182,0.2); }
 
 /* =====================================================
    CARD FOOTER
-   ===================================================== */
-.card-foot {
-  padding: 10px 20px 14px;
-}
+===================================================== */
+.card-foot { padding: 10px 20px 14px; }
 
 /* =====================================================
    CALLOUTS
-   ===================================================== */
+===================================================== */
 .callout {
   border-radius: var(--radius);
   padding: 12px 16px;
@@ -540,37 +449,17 @@ main {
   line-height: 1.55;
 }
 .callout strong { font-weight: 600; }
-.callout.warn {
-  background: var(--amber-light);
-  border: 1px solid rgba(180,83,9,0.18);
-  border-left: 3px solid var(--amber);
-  color: #78350F;
-}
+.callout.warn { background: var(--amber-light); border: 1px solid rgba(180,83,9,0.18); border-left: 3px solid var(--amber); color: #78350F; }
 .callout.warn strong { color: var(--amber); }
-.callout.info {
-  background: var(--teal-xlight);
-  border: 1px solid rgba(31,107,95,0.15);
-  border-left: 3px solid var(--teal-deep);
-  color: var(--body);
-}
+.callout.info { background: var(--teal-xlight); border: 1px solid rgba(31,107,95,0.15); border-left: 3px solid var(--teal-deep); color: var(--body); }
 .callout.info strong { color: var(--teal-deep); }
-.callout.alert {
-  background: var(--rose-light);
-  border: 1px solid rgba(155,28,28,0.15);
-  border-left: 3px solid var(--rose);
-  color: #7F1D1D;
-}
+.callout.alert { background: var(--rose-light); border: 1px solid rgba(155,28,28,0.15); border-left: 3px solid var(--rose); color: #7F1D1D; }
 .callout.alert strong { color: var(--rose); }
-.callout.note {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--muted);
-  color: var(--muted);
-}
+.callout.note { background: var(--cream); border: 1px solid var(--border); border-left: 3px solid var(--muted); color: var(--muted); }
 
 /* =====================================================
    CHANGE BADGE
-   ===================================================== */
+===================================================== */
 .change-badge {
   display: inline-flex;
   align-items: center;
@@ -590,7 +479,7 @@ main {
 
 /* =====================================================
    DATA TABLE
-   ===================================================== */
+===================================================== */
 .ref-table {
   width: 100%;
   border-collapse: collapse;
@@ -618,47 +507,14 @@ main {
 .ref-table tr:last-child td { border-bottom: none; }
 .ref-table tr:hover td { background: var(--teal-xlight); }
 .ref-table td:first-child { font-weight: 500; color: var(--navy); }
-
-.yes-pill {
-  background: var(--teal-light);
-  color: var(--teal-deep);
-  border: 1px solid rgba(31,107,95,0.2);
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-.no-pill {
-  background: var(--cream);
-  color: var(--muted);
-  border: 1px solid var(--border);
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-.partial-pill {
-  background: var(--amber-light);
-  color: var(--amber);
-  border: 1px solid rgba(180,83,9,0.18);
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-.verify-pill {
-  background: var(--rose-light);
-  color: var(--rose);
-  border: 1px solid rgba(155,28,28,0.15);
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 600;
-}
+.yes-pill { background: var(--teal-light); color: var(--teal-deep); border: 1px solid rgba(31,107,95,0.2); padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; }
+.no-pill { background: var(--cream); color: var(--muted); border: 1px solid var(--border); padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; }
+.partial-pill { background: var(--amber-light); color: var(--amber); border: 1px solid rgba(180,83,9,0.18); padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; }
+.verify-pill { background: var(--rose-light); color: var(--rose); border: 1px solid rgba(155,28,28,0.15); padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; }
 
 /* =====================================================
    CALCULATOR
-   ===================================================== */
+===================================================== */
 .calc-wrap {
   background: var(--white);
   border: 1px solid var(--border);
@@ -666,28 +522,11 @@ main {
   padding: 28px 32px;
   box-shadow: var(--shadow-sm);
 }
-.calc-wrap h3 {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.calc-inputs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px 28px;
-  margin-bottom: 24px;
-}
-
+.calc-wrap h3 { font-size: 1.1rem; margin-bottom: 20px; }
+.calc-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 28px; margin-bottom: 24px; }
 .form-group { display: flex; flex-direction: column; gap: 5px; }
-.form-group label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.form-group input,
-.form-group select {
+.form-group label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.form-group input, .form-group select {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 0.9rem;
   background: var(--cream);
@@ -698,9 +537,7 @@ main {
   outline: none;
   transition: border-color 0.18s;
 }
-.form-group input:focus,
-.form-group select:focus { border-color: var(--teal-deep); background: var(--white); }
-
+.form-group input:focus, .form-group select:focus { border-color: var(--teal-deep); background: var(--white); }
 .form-check {
   display: flex;
   align-items: center;
@@ -710,13 +547,7 @@ main {
   padding-top: 6px;
   cursor: pointer;
 }
-.form-check input[type=checkbox] {
-  width: 16px;
-  height: 16px;
-  accent-color: var(--teal-deep);
-  cursor: pointer;
-}
-
+.form-check input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--teal-deep); cursor: pointer; }
 .calc-btn {
   background: var(--teal-deep);
   color: #fff;
@@ -731,7 +562,6 @@ main {
   letter-spacing: 0.01em;
 }
 .calc-btn:hover { background: var(--teal-mid); transform: translateY(-1px); }
-
 .results-area { margin-top: 28px; }
 .results-area h4 {
   font-size: 0.85rem;
@@ -742,53 +572,22 @@ main {
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-
-.results-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-  gap: 10px;
-}
-
-.result-card {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 12px 15px;
-}
-.result-card .rc-label {
-  font-size: 0.72rem;
-  color: var(--muted);
-  margin-bottom: 5px;
-}
-.result-card .rc-val {
-  font-family: 'Lora', serif;
-  font-size: 1.15rem;
-  color: var(--teal-deep);
-  font-weight: 700;
-}
-.result-card .rc-sub {
-  font-size: 0.68rem;
-  color: var(--muted);
-  margin-top: 3px;
-}
-.result-card.total {
-  background: var(--teal-xlight);
-  border-color: rgba(31,107,95,0.2);
-}
+.results-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.result-card { background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 15px; }
+.result-card .rc-label { font-size: 0.72rem; color: var(--muted); margin-bottom: 5px; }
+.result-card .rc-val { font-family: 'Lora', serif; font-size: 1.15rem; color: var(--teal-deep); font-weight: 700; }
+.result-card .rc-sub { font-size: 0.68rem; color: var(--muted); margin-top: 3px; }
+.result-card.total { background: var(--teal-xlight); border-color: rgba(31,107,95,0.2); }
 .result-card.total .rc-val { color: var(--navy); font-size: 1.3rem; }
-.result-card.grand {
-  background: var(--navy);
-  border-color: var(--navy);
-}
+.result-card.grand { background: var(--navy); border-color: var(--navy); }
 .result-card.grand .rc-label { color: rgba(255,255,255,0.6); }
 .result-card.grand .rc-val { color: #fff; font-size: 1.3rem; }
 .result-card.grand .rc-sub { color: rgba(255,255,255,0.5); }
 
 /* =====================================================
    DEADLINE LIST
-   ===================================================== */
+===================================================== */
 .deadline-list { display: flex; flex-direction: column; gap: 10px; }
-
 .deadline-item {
   background: var(--white);
   border: 1px solid var(--border);
@@ -799,47 +598,13 @@ main {
   gap: 18px;
   box-shadow: var(--shadow-sm);
 }
-
-.dl-date {
-  background: var(--teal-deep);
-  color: #fff;
-  border-radius: var(--radius);
-  padding: 8px 14px;
-  text-align: center;
-  min-width: 68px;
-  flex-shrink: 0;
-}
-.dl-date .dl-month {
-  font-size: 0.6rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  opacity: 0.8;
-}
-.dl-date .dl-day {
-  font-family: 'Lora', serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
+.dl-date { background: var(--teal-deep); color: #fff; border-radius: var(--radius); padding: 8px 14px; text-align: center; min-width: 68px; flex-shrink: 0; }
+.dl-date .dl-month { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; }
+.dl-date .dl-day { font-family: 'Lora', serif; font-size: 1.5rem; font-weight: 700; line-height: 1; }
 .dl-info { flex: 1; }
-.dl-info strong {
-  font-size: 0.9rem;
-  display: block;
-  color: var(--navy);
-  margin-bottom: 3px;
-}
+.dl-info strong { font-size: 0.9rem; display: block; color: var(--navy); margin-bottom: 3px; }
 .dl-info p { font-size: 0.8rem; color: var(--muted); line-height: 1.45; }
-
-.dl-tag {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 20px;
-  flex-shrink: 0;
-}
+.dl-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; flex-shrink: 0; }
 .dl-tag.quarterly { background: var(--teal-light); color: var(--teal-deep); border: 1px solid rgba(31,107,95,0.2); }
 .dl-tag.annual { background: var(--amber-light); color: var(--amber); border: 1px solid rgba(180,83,9,0.2); }
 .dl-tag.compliance { background: var(--rose-light); color: var(--rose); border: 1px solid rgba(155,28,28,0.15); }
@@ -847,215 +612,188 @@ main {
 
 /* =====================================================
    GLOSSARY
-   ===================================================== */
-.glossary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 14px;
-}
-
-.gloss-item {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 18px;
-  box-shadow: var(--shadow-sm);
-}
-.gloss-item dt {
-  font-family: 'Lora', serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--teal-deep);
-  margin-bottom: 5px;
-}
-.gloss-item dd {
-  font-size: 0.83rem;
-  color: var(--body);
-  line-height: 1.55;
-}
+===================================================== */
+.glossary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+.gloss-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow-sm); }
+.gloss-item dt { font-family: 'Lora', serif; font-size: 0.95rem; font-weight: 700; color: var(--teal-deep); margin-bottom: 5px; }
+.gloss-item dd { font-size: 0.83rem; color: var(--body); line-height: 1.55; }
 
 /* =====================================================
    ABOUT / CONTACT
-   ===================================================== */
-.about-layout {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 28px;
-  align-items: start;
-}
-
-.about-main {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 32px;
-  box-shadow: var(--shadow-sm);
-}
-.about-main h3 {
-  font-size: 1.2rem;
-  margin-bottom: 14px;
-  color: var(--teal-deep);
-}
-.about-main p {
-  font-size: 0.9rem;
-  color: var(--body);
-  line-height: 1.7;
-  margin-bottom: 14px;
-}
+===================================================== */
+.about-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 28px; align-items: start; }
+.about-main { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-sm); }
+.about-main h3 { font-size: 1.2rem; margin-bottom: 14px; color: var(--teal-deep); }
+.about-main h4 { font-size: 1rem; margin-bottom: 10px; color: var(--navy); margin-top: 24px; }
+.about-main p { font-size: 0.9rem; color: var(--body); line-height: 1.7; margin-bottom: 14px; }
 .about-main p:last-of-type { margin-bottom: 0; }
-
-.about-sidebar {}
-
-.contact-card {
-  background: var(--teal-deep);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  color: #fff;
-  margin-bottom: 16px;
-}
-.contact-card h3 {
-  font-size: 1rem;
-  color: #fff;
-  margin-bottom: 16px;
-  opacity: 0.9;
-}
-.contact-line {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 12px;
-}
+.contact-card { background: var(--teal-deep); border-radius: var(--radius-lg); padding: 24px; color: #fff; margin-bottom: 16px; }
+.contact-card h3 { font-size: 1rem; color: #fff; margin-bottom: 16px; opacity: 0.9; }
+.contact-line { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: rgba(255,255,255,0.85); margin-bottom: 12px; }
 .contact-line:last-child { margin-bottom: 0; }
-.contact-line a {
-  color: rgba(255,255,255,0.9);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
+.contact-line a { color: rgba(255,255,255,0.9); text-decoration: underline; text-underline-offset: 2px; }
 .contact-line a:hover { color: #fff; }
-.contact-icon {
-  width: 18px;
-  height: 18px;
-  opacity: 0.7;
-  flex-shrink: 0;
-}
-
-.disclaimer-card {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 18px;
-  font-size: 0.78rem;
-  color: var(--muted);
-  line-height: 1.55;
-}
+.contact-icon { width: 18px; height: 18px; opacity: 0.7; flex-shrink: 0; }
+.disclaimer-card { background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; font-size: 0.78rem; color: var(--muted); line-height: 1.55; }
 .disclaimer-card strong { color: var(--body); }
 
 /* =====================================================
    SOURCES
-   ===================================================== */
-.sources-grid {
+===================================================== */
+.sources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.source-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; display: block; transition: box-shadow 0.18s, transform 0.15s; box-shadow: var(--shadow-sm); }
+.source-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); text-decoration: none; }
+.source-card .sc-cat { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--teal-mid); margin-bottom: 5px; }
+.source-card .sc-title { font-size: 0.9rem; font-weight: 600; color: var(--navy); margin-bottom: 4px; line-height: 1.3; }
+.source-card .sc-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.5; margin-bottom: 8px; }
+.source-card .sc-url { font-size: 0.68rem; color: var(--teal-deep); font-family: monospace; word-break: break-all; }
+
+/* =====================================================
+   SYSTEM METADATA BLOCK (Phase 5)
+===================================================== */
+.metadata-block {
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  margin-top: 36px;
+  color: rgba(255,255,255,0.85);
+}
+.metadata-block h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.metadata-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.meta-item {}
+.meta-item .mi-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 5px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.meta-item .mi-val {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.5;
+}
+.meta-item .mi-val strong {
+  color: #fff;
+  font-weight: 600;
+}
+.meta-item .mi-note {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 4px;
+  line-height: 1.45;
 }
 
-.source-card {
-  background: var(--white);
+/* =====================================================
+   RATE MATRIX TABLE
+===================================================== */
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+  margin: 14px 0 8px;
+}
+.matrix-table th {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+  padding: 8px 12px;
+  text-align: center;
+  border-bottom: 2px solid var(--teal-light);
+  background: var(--teal-xlight);
+}
+.matrix-table th:first-child { text-align: left; }
+.matrix-table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--body);
+  text-align: center;
+}
+.matrix-table td:first-child { text-align: left; font-weight: 500; color: var(--navy); font-size: 0.8rem; }
+.matrix-table tr:last-child td { border-bottom: none; }
+.matrix-table tr:hover td { background: var(--teal-xlight); }
+.matrix-rate { font-weight: 700; color: var(--teal-deep); }
+.matrix-rate.high { color: var(--rose); }
+
+/* =====================================================
+   FORMULA BREAKDOWN
+===================================================== */
+.formula-block {
+  background: var(--cream);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 16px 18px;
-  display: block;
-  transition: box-shadow 0.18s, transform 0.15s;
-  box-shadow: var(--shadow-sm);
+  padding: 14px 16px;
+  margin: 12px 0;
 }
-.source-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
-  text-decoration: none;
-}
-.source-card .sc-cat {
-  font-size: 0.65rem;
+.formula-block h5 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--teal-mid);
-  margin-bottom: 5px;
+  color: var(--muted);
+  margin-bottom: 10px;
 }
-.source-card .sc-title {
-  font-size: 0.9rem;
-  font-weight: 600;
+.formula-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 4px 0;
+  font-size: 0.82rem;
+  border-bottom: 1px solid var(--border-light);
+}
+.formula-row:last-child { border-bottom: none; }
+.formula-row.total-row {
+  border-top: 2px solid var(--border);
+  margin-top: 4px;
+  padding-top: 8px;
+  font-weight: 700;
   color: var(--navy);
-  margin-bottom: 4px;
-  line-height: 1.3;
 }
-.source-card .sc-desc {
-  font-size: 0.78rem;
-  color: var(--muted);
-  line-height: 1.5;
-  margin-bottom: 8px;
-}
-.source-card .sc-url {
-  font-size: 0.68rem;
-  color: var(--teal-deep);
-  word-break: break-all;
-}
-
-/* =====================================================
-   FOOTER
-   ===================================================== */
-.site-footer {
-  background: var(--navy);
-  color: rgba(255,255,255,0.6);
-  text-align: center;
-  padding: 20px 48px;
-  font-size: 0.78rem;
-  line-height: 1.7;
-}
-.site-footer a { color: rgba(255,255,255,0.75); }
-.site-footer a:hover { color: #fff; }
-.site-footer strong { color: rgba(255,255,255,0.85); }
-
-/* =====================================================
-   VERIFIED STAMP
-   ===================================================== */
-.verified {
-  font-size: 0.65rem;
-  color: var(--muted);
-  font-style: italic;
-}
+.formula-label { color: var(--muted); }
+.formula-val { font-weight: 600; color: var(--navy); white-space: nowrap; }
+.formula-val.delinquent { color: var(--rose); }
 
 /* =====================================================
    RESPONSIVE
-   ===================================================== */
+===================================================== */
 @media (max-width: 768px) {
-  .site-header, .nav-bar, main, .site-footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .nav-bar { top: 62px; }
-  .summary-bar { flex-wrap: wrap; gap: 12px; }
-  .summary-stat { border-right: none; padding: 8px 0; flex-basis: 45%; }
-  .card-grid, .card-grid.two-col { grid-template-columns: 1fr; }
-  .calc-inputs { grid-template-columns: 1fr; }
+  .site-header { padding: 0 20px; }
+  .nav-bar { padding: 0 20px; }
+  main { padding: 24px 20px 60px; }
+  .card-grid.two-col { grid-template-columns: 1fr; }
   .about-layout { grid-template-columns: 1fr; }
-  .header-inner { flex-wrap: wrap; }
-  .employer-toggle { display: none; }
-}
-
-@media print {
-  .site-header, .nav-bar, .site-footer { position: static; }
-  .tab-section { display: block !important; page-break-before: always; }
-  .tab-section:first-child { page-break-before: auto; }
+  .calc-inputs { grid-template-columns: 1fr; }
+  .summary-bar { flex-direction: column; gap: 16px; }
+  .summary-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); padding: 12px 0; }
+  .summary-stat:last-child { border-bottom: none; }
+  .metadata-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
 
-<!-- =========================================================
+<!-- =====================================================
      HEADER
-     ========================================================= -->
+===================================================== -->
 <header class="site-header">
   <div class="header-inner">
     <div class="header-brand">
@@ -1066,7 +804,7 @@ main {
       <span class="year-badge">2026 Rates</span>
       <div class="employer-toggle">
         <label for="empSize">Employer:</label>
-        <select id="empSize" class="toggle-select" onchange="setEmployerSize(this.value)">
+        <select class="toggle-select" id="empSize" onchange="updateEmployerSize(this.value)">
           <option value="large">50+ Employees</option>
           <option value="small">Under 50 Employees</option>
         </select>
@@ -1075,10 +813,10 @@ main {
   </div>
 </header>
 
-<!-- =========================================================
+<!-- =====================================================
      NAV TABS
-     ========================================================= -->
-<nav class="nav-bar" role="navigation" aria-label="Main navigation">
+===================================================== -->
+<nav class="nav-bar">
   <div class="nav-inner">
     <button class="nav-tab active" onclick="showTab('overview', this)">Overview</button>
     <button class="nav-tab" onclick="showTab('state', this)">State Taxes</button>
@@ -1093,50 +831,28 @@ main {
   </div>
 </nav>
 
-<!-- =========================================================
-     MAIN
-     ========================================================= -->
 <main>
 
-<!-- ============================================================ OVERVIEW -->
-<section class="tab-section active" id="tab-overview">
+<!-- =====================================================
+     TAB: OVERVIEW
+===================================================== -->
+<section id="tab-overview" class="tab-section active">
   <div class="section-intro">
     <h2>Washington State — 2026 At a Glance</h2>
     <p>Washington has no personal state income tax. Payroll obligations center on social insurance programs, workers' compensation, and — for Seattle employers — specific local payroll expense taxes. This reference covers all 2026 obligations with direct links to statutory authority and administering agencies.</p>
   </div>
 
   <div class="summary-bar">
-    <div class="summary-stat">
-      <span class="s-val">None</span>
-      <span class="s-label">State Income Tax</span>
-    </div>
-    <div class="summary-stat">
-      <span class="s-val">$17.13</span>
-      <span class="s-label">Min. Wage / hr</span>
-    </div>
-    <div class="summary-stat">
-      <span class="s-val">$78,200</span>
-      <span class="s-label">SUI Wage Base</span>
-    </div>
-    <div class="summary-stat">
-      <span class="s-val">1.13%</span>
-      <span class="s-label">PFML Premium</span>
-    </div>
-    <div class="summary-stat">
-      <span class="s-val">0.58%</span>
-      <span class="s-label">WA Cares Rate</span>
-    </div>
-    <div class="summary-stat">
-      <span class="s-val">$184,500</span>
-      <span class="s-label">Social Security Base</span>
-    </div>
+    <div class="summary-stat"><span class="s-val">None</span><span class="s-label">State Income Tax</span></div>
+    <div class="summary-stat"><span class="s-val">$17.13</span><span class="s-label">Min. Wage / hr</span></div>
+    <div class="summary-stat"><span class="s-val">$78,200</span><span class="s-label">SUI Wage Base</span></div>
+    <div class="summary-stat"><span class="s-val">1.13%</span><span class="s-label">PFML Premium</span></div>
+    <div class="summary-stat"><span class="s-val">0.58%</span><span class="s-label">WA Cares Rate</span></div>
+    <div class="summary-stat"><span class="s-val">$184,500</span><span class="s-label">Social Security Base</span></div>
   </div>
 
   <div class="changes-strip">
-    <h3>
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#5C8A76" stroke-width="1.5"/><path d="M7 4v3.5L9 9" stroke="#5C8A76" stroke-width="1.5" stroke-linecap="round"/></svg>
-      What Changed for 2026
-    </h3>
+    <h3>&#9654; What Changed for 2026</h3>
     <ul>
       <li><strong>PFML premium increased</strong> from 0.92% (2025) to 1.13% effective January 1, 2026 — driven by higher program utilization.</li>
       <li><strong>SUI wage base increased</strong> from $72,800 (2025) to $78,200 effective January 1, 2026.</li>
@@ -1144,13 +860,15 @@ main {
       <li><strong>WA Cares Fund SB 5291 effective January 1, 2026</strong> — expanded exemption categories including automatic exemption for temporary visa holders; opt-in rights for previously exempt employees; out-of-state coverage continuation after 3 years.</li>
       <li><strong>WA Cares benefits available statewide July 1, 2026</strong> — pilot counties began January 2026; employers should anticipate employee inquiries and leave coordination.</li>
       <li><strong>PFML HB 2345 effective June 11, 2026</strong> — reallocates family vs. medical premium shares to align with IRS FICA guidance. Total premium and EE/ER split unchanged; payroll system deduction logic may need review.</li>
-      <li><strong>Seattle JumpStart thresholds and tiers</strong> — verify current-year thresholds with Seattle City Finance; rates range 0.746%–2.557%.</li>
+      <li><strong>Seattle JumpStart thresholds and tiers</strong> — 2026 business payroll threshold is $9,074,409 (CPI-adjusted per SMC 5.38). Full 3-tier × 2-band rate matrix applies; verify with Seattle City Finance annually.</li>
+      <li><strong>Seattle Social Housing Tax transitions to quarterly filing</strong> for 2026 (2025 annual return due January 31, 2026).</li>
     </ul>
   </div>
 
-  <div class="cat-label">Program Summary</div>
+  <p class="cat-label">Program Summary</p>
   <div class="card-grid">
 
+    <!-- SUI -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1158,18 +876,13 @@ main {
           <div class="card-name">WA SUI + EAF</div>
           <div class="card-sub">Employment Security Department</div>
         </div>
-        <div class="rate-box amber">
-          <span class="rate-val">0.27–6.02%</span>
-          <span class="rate-lbl">Employer Rate</span>
-        </div>
+        <div class="rate-box"><span class="rate-val">0.27–6.03%</span><span class="rate-lbl">Employer Rate</span></div>
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">2026 Wage Base</span><span class="data-value teal">$78,200</span></div>
         <div class="data-row"><span class="data-label">EAF Add-on</span><span class="data-value">+0.03%</span></div>
         <div class="data-row"><span class="data-label">New Employer Rate</span><span class="data-value">115% of industry avg.</span></div>
         <div class="payer-row"><span class="payer-tag er">Employer Only</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://esd.wa.gov/taxes/unemployment-insurance" target="_blank" class="agency-badge badge-esd">ESD</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50.29.025" target="_blank" class="agency-badge badge-rcw">RCW 50.29.025</a>
@@ -1177,25 +890,21 @@ main {
       </div>
     </div>
 
+    <!-- PFML -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
-          <div class="card-program">Paid Family &amp; Medical Leave <span class="change-badge">↑ 2026</span></div>
+          <div class="card-program">Paid Family &amp; Medical Leave <span class="change-badge">&#8593; 2026</span></div>
           <div class="card-name">WA PFML</div>
           <div class="card-sub">Employment Security Department</div>
         </div>
-        <div class="rate-box">
-          <span class="rate-val">1.13%</span>
-          <span class="rate-lbl">Total Premium</span>
-        </div>
+        <div class="rate-box"><span class="rate-val">1.13%</span><span class="rate-lbl">Total Premium</span></div>
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">2026 Wage Base</span><span class="data-value teal">$184,500 (SS Cap)</span></div>
         <div class="data-row"><span class="data-label">Employee Share</span><span class="data-value">71.43%</span></div>
-        <div class="data-row" id="pfml-er-row"><span class="data-label">Employer Share (50+ EE)</span><span class="data-value">28.57%</span></div>
+        <div class="data-row"><span class="data-label">Employer Share (50+ EE)</span><span class="data-value">28.57%</span></div>
         <div class="payer-row"><span class="payer-tag both">EE + ER</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://paidleave.wa.gov" target="_blank" class="agency-badge badge-esd">ESD / paidleave.wa.gov</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50A.10.030" target="_blank" class="agency-badge badge-rcw">RCW 50A.10.030</a>
@@ -1203,6 +912,7 @@ main {
       </div>
     </div>
 
+    <!-- WA Cares -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1210,18 +920,13 @@ main {
           <div class="card-name">WA Cares Fund</div>
           <div class="card-sub">Employment Security Department</div>
         </div>
-        <div class="rate-box">
-          <span class="rate-val">0.58%</span>
-          <span class="rate-lbl">Employee Rate · No Cap</span>
-        </div>
+        <div class="rate-box"><span class="rate-val">0.58%</span><span class="rate-lbl">Employee Rate · No Cap</span></div>
       </div>
       <div class="card-body">
-        <div class="data-row"><span class="data-label">Wage Base</span><span class="data-value rose">No Cap — All Gross Wages</span></div>
+        <div class="data-row"><span class="data-label">Wage Base</span><span class="data-value teal">No Cap — All Gross Wages</span></div>
         <div class="data-row"><span class="data-label">Employer Contribution</span><span class="data-value">None</span></div>
-        <div class="data-row"><span class="data-label">Benefits Statewide</span><span class="data-value teal">July 1, 2026</span></div>
+        <div class="data-row"><span class="data-label">Benefits Statewide</span><span class="data-value">July 1, 2026</span></div>
         <div class="payer-row"><span class="payer-tag ee">Employee Only</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://wacaresfund.wa.gov" target="_blank" class="agency-badge badge-esd">wacaresfund.wa.gov</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50B.04.080" target="_blank" class="agency-badge badge-rcw">RCW 50B.04.080</a>
@@ -1229,6 +934,7 @@ main {
       </div>
     </div>
 
+    <!-- Workers Comp -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1236,18 +942,13 @@ main {
           <div class="card-name">Workers' Compensation (L&amp;I)</div>
           <div class="card-sub">WA Dept. of Labor &amp; Industries</div>
         </div>
-        <div class="rate-box muted">
-          <span class="rate-val">Per Hour</span>
-          <span class="rate-lbl">Risk Class Based</span>
-        </div>
+        <div class="rate-box muted"><span class="rate-val">Per Hour</span><span class="rate-lbl">Risk Class Based</span></div>
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">SPF Rate (2026)</span><span class="data-value">$0.1912 / hour</span></div>
         <div class="data-row"><span class="data-label">Employee SPF Share</span><span class="data-value">$0.0956 / hour</span></div>
         <div class="data-row"><span class="data-label">Full rate basis</span><span class="data-value">Experience &amp; risk class</span></div>
         <div class="payer-row"><span class="payer-tag both">EE + ER Shared</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://lni.wa.gov/insurance/workers-comp/" target="_blank" class="agency-badge badge-lni">L&amp;I</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=51.16.035" target="_blank" class="agency-badge badge-rcw">RCW 51.16.035</a>
@@ -1255,6 +956,7 @@ main {
       </div>
     </div>
 
+    <!-- JumpStart -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1262,52 +964,44 @@ main {
           <div class="card-name">JumpStart Payroll Expense Tax</div>
           <div class="card-sub">City of Seattle</div>
         </div>
-        <div class="rate-box amber">
-          <span class="rate-val">0.7–2.5%</span>
-          <span class="rate-lbl">Tiered by Payroll Size</span>
-        </div>
+        <div class="rate-box amber"><span class="rate-val">0.746–2.557%</span><span class="rate-lbl">Tiered by Payroll Size</span></div>
       </div>
       <div class="card-body">
-        <div class="data-row"><span class="data-label">Business Payroll Threshold</span><span class="data-value">≥ $9.07M annually</span></div>
+        <div class="data-row"><span class="data-label">Business Payroll Threshold</span><span class="data-value amber">≥ $9,074,409 annually</span></div>
         <div class="data-row"><span class="data-label">Individual EE Comp Threshold</span><span class="data-value">≥ $194,452</span></div>
         <div class="data-row"><span class="data-label">Employee Withholding</span><span class="data-value">No — Employer Expense</span></div>
         <div class="payer-row"><span class="payer-tag er">Employer Expense</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/payroll-expense-tax" target="_blank" class="agency-badge badge-seattle">Seattle Finance</a>
         </div>
       </div>
     </div>
 
+    <!-- Social Housing Tax -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
-          <div class="card-program">Seattle Local Tax <span class="change-badge">Eff. Jan 1, 2025</span></div>
+          <div class="card-program">Seattle Local Tax &nbsp;·&nbsp; Eff. Jan 1, 2025</div>
           <div class="card-name">Seattle Social Housing Tax</div>
           <div class="card-sub">City of Seattle — Voter-Approved Feb 2025</div>
         </div>
-        <div class="rate-box amber">
-          <span class="rate-val">5%</span>
-          <span class="rate-lbl">On Comp &gt; $1M / EE</span>
-        </div>
+        <div class="rate-box amber"><span class="rate-val">5%</span><span class="rate-lbl">On Comp &gt; $1M / EE</span></div>
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value amber">5%</span></div>
         <div class="data-row"><span class="data-label">Threshold</span><span class="data-value">Comp &gt; $1M paid in Seattle per EE</span></div>
-        <div class="data-row"><span class="data-label">Business Payroll Min.</span><span class="data-value teal">None — unlike JumpStart</span></div>
+        <div class="data-row"><span class="data-label">Business Payroll Min.</span><span class="data-value">None — unlike JumpStart</span></div>
         <div class="data-row"><span class="data-label">Employee Withholding</span><span class="data-value">None — employer obligation</span></div>
         <div class="data-row"><span class="data-label">Filing — 2025 (first year)</span><span class="data-value">Annual · due Jan 31, 2026</span></div>
-        <div class="data-row"><span class="data-label">Filing — 2026 onward</span><span class="data-value">Quarterly</span></div>
+        <div class="data-row"><span class="data-label">Filing — 2026 onward</span><span class="data-value amber">Quarterly</span></div>
         <div class="payer-row"><span class="payer-tag er">Employer Only</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/social-housing-tax" target="_blank" class="agency-badge badge-seattle">Seattle Finance</a>
         </div>
       </div>
     </div>
 
+    <!-- FICA/FUTA -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1315,10 +1009,7 @@ main {
           <div class="card-name">FICA + FUTA</div>
           <div class="card-sub">IRS / SSA</div>
         </div>
-        <div class="rate-box">
-          <span class="rate-val">7.65%</span>
-          <span class="rate-lbl">Combined EE FICA Rate</span>
-        </div>
+        <div class="rate-box"><span class="rate-val">7.65%</span><span class="rate-lbl">Combined EE FICA Rate</span></div>
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">Social Security (EE + ER)</span><span class="data-value">6.20% ea. up to $184,500</span></div>
@@ -1326,8 +1017,6 @@ main {
         <div class="data-row"><span class="data-label">Add'l Medicare (&gt;$200K)</span><span class="data-value">+0.90% EE only</span></div>
         <div class="data-row"><span class="data-label">FUTA Net Rate</span><span class="data-value">0.60% on $7,000</span></div>
         <div class="payer-row"><span class="payer-tag both">EE + ER</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://www.irs.gov/publications/p15" target="_blank" class="agency-badge badge-irs">IRS Pub 15</a>
           <a href="https://www.ssa.gov/oact/cola/cbb.html" target="_blank" class="agency-badge badge-ssa">SSA</a>
@@ -1335,18 +1024,22 @@ main {
       </div>
     </div>
 
-  </div>
+  </div><!-- /card-grid -->
 </section>
 
-<!-- ============================================================ STATE TAXES -->
-<section class="tab-section" id="tab-state">
+<!-- =====================================================
+     TAB: STATE TAXES
+===================================================== -->
+<section id="tab-state" class="tab-section">
   <div class="section-intro">
     <h2>State-Level Tax Programs</h2>
     <p>Detailed reference for each Washington state payroll program — rates, wage bases, statutory authority, and employer obligations.</p>
   </div>
 
-  <div class="cat-label">Unemployment Programs</div>
-  <div class="card-grid">
+  <p class="cat-label">Unemployment Programs</p>
+  <div class="card-grid one-col">
+
+    <!-- SUI Card — Full Detail -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1354,31 +1047,62 @@ main {
           <div class="card-name">State Unemployment Insurance (SUI)</div>
           <div class="card-sub">WA Employment Security Department</div>
         </div>
-        <div class="rate-box amber">
-          <span class="rate-val">0.27–6.02%</span>
-          <span class="rate-lbl">Experience-Rated</span>
-        </div>
+        <div class="rate-box"><span class="rate-val">0.27–6.03%</span><span class="rate-lbl">Experience-Rated</span></div>
       </div>
       <div class="card-body">
+
+        <!-- Program Classification Layer -->
+        <div style="margin-bottom:14px;">
+          <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">Tax Type: Experience-Rated Employer Contribution — Program Classification Layer</div>
+          <div class="formula-block">
+            <h5>Rate Formula Components — 2026</h5>
+            <div class="formula-row">
+              <span class="formula-label">Experience Rate Range</span>
+              <span class="formula-val">0.00% – 5.40% &nbsp;(40 statutory rate classes)</span>
+            </div>
+            <div class="formula-row">
+              <span class="formula-label">Graduated Social Cost Factor</span>
+              <span class="formula-val">Variable — capped at 0.60% (standard employers)</span>
+            </div>
+            <div class="formula-row">
+              <span class="formula-label">Employment Administration Fund (EAF)</span>
+              <span class="formula-val">0.03% flat &nbsp;(separate assessment, same wage base)</span>
+            </div>
+            <div class="formula-row total-row">
+              <span class="formula-label">Combined Rate Range (incl. EAF)</span>
+              <span class="formula-val">0.27% – 6.03% &nbsp;(Rate Class 1 = 0.27%; Rate Class 40 = 6.03%)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delinquent Rate -->
+        <div class="callout alert">
+          <strong>Delinquent / Penalty Rate Ceiling: 8.15%</strong> per RCW 50.29.025(2)(d)<br>
+          Assigned to employers with missing quarterly returns or unresolved tax balances. Calculated as: 5.40% (Rate Class 40 base) + 2.00% (penalty surcharge) + 0.75% (delinquent social cost cap) = 8.15%. With EAF stacked: <strong>8.18% all-in</strong>. Excludes employers at standard experience-rate classes.
+        </div>
+
         <div class="data-row"><span class="data-label">2026 Taxable Wage Base</span><span class="data-value teal">$78,200</span></div>
         <div class="data-row"><span class="data-label">Prior Year Base (2025)</span><span class="data-value">$72,800</span></div>
-        <div class="data-row"><span class="data-label">Rate Range</span><span class="data-value">0.27% – 6.02%</span></div>
+        <div class="data-row"><span class="data-label">Combined Rate Range</span><span class="data-value">0.27% – 6.03%</span></div>
         <div class="data-row"><span class="data-label">New Employer Default</span><span class="data-value">115% of industry avg.</span></div>
         <div class="data-row"><span class="data-label">Employee Deduction</span><span class="data-value">None</span></div>
-        <div class="data-row"><span class="data-label">Voluntary Contribution</span><span class="data-value teal">Yes — reduces rate</span></div>
-        <div class="callout info" style="margin-top:10px"><strong>Rate notice:</strong> Individual employer rates are assigned annually by ESD on the Tax Rate Determination Notice. Verify your rate on the ESD employer portal each January.</div>
+        <div class="data-row"><span class="data-label">Voluntary Contribution</span><span class="data-value">Yes — reduces rate</span></div>
+
+        <div class="callout info">
+          <strong>Rate notice:</strong> Individual employer rates are assigned annually by ESD on the Tax Rate Determination Notice. Verify your rate on the ESD employer portal each January.
+        </div>
+
         <div class="payer-row"><span class="payer-tag er">Employer Only</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://esd.wa.gov/taxes/unemployment-insurance" target="_blank" class="agency-badge badge-esd">ESD UI Tax</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50.29.025" target="_blank" class="agency-badge badge-rcw">RCW 50.29.025</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50" target="_blank" class="agency-badge badge-rcw">RCW Title 50</a>
         </div>
-        <div class="verified" style="margin-top:8px">Verified May 2026</div>
+        <div style="font-size:0.68rem;color:var(--muted);margin-top:10px;">Verified May 2026</div>
       </div>
     </div>
 
+    <!-- EAF Card -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1386,140 +1110,139 @@ main {
           <div class="card-name">Employment Administration Fund (EAF)</div>
           <div class="card-sub">WA Employment Security Department</div>
         </div>
-        <div class="rate-box">
-          <span class="rate-val">~0.03%</span>
-          <span class="rate-lbl">Annual Add-On</span>
-        </div>
+        <div class="rate-box"><span class="rate-val">~0.03%</span><span class="rate-lbl">Annual Add-On</span></div>
       </div>
       <div class="card-body">
-        <div class="data-row"><span class="data-label">2026 Wage Base</span><span class="data-value teal">$78,200 (same as SUI)</span></div>
+        <div class="data-row"><span class="data-label">2026 Wage Base</span><span class="data-value">$78,200 (same as SUI)</span></div>
         <div class="data-row"><span class="data-label">Assigned By</span><span class="data-value">ESD Tax Rate Notice</span></div>
         <div class="data-row"><span class="data-label">Appears Separately</span><span class="data-value">Yes — own line on notice</span></div>
-        <div class="callout note" style="margin-top:10px">The EAF appears as a separate line item on the ESD annual tax rate determination notice, distinct from the UI experience rate. Both are tied to the same SUI account and wage base.</div>
+        <p style="font-size:0.83rem;color:var(--muted);margin-top:12px;line-height:1.5;">The EAF appears as a separate line item on the ESD annual tax rate determination notice, distinct from the UI experience rate. Both are tied to the same SUI account and wage base.</p>
         <div class="payer-row"><span class="payer-tag er">Employer Only</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://esd.wa.gov/taxes/unemployment-insurance" target="_blank" class="agency-badge badge-esd">ESD</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50.24.014" target="_blank" class="agency-badge badge-rcw">RCW 50.24.014</a>
         </div>
-        <div class="verified" style="margin-top:8px">Verified May 2026</div>
+        <div style="font-size:0.68rem;color:var(--muted);margin-top:10px;">Verified May 2026</div>
       </div>
     </div>
-  </div>
 
-  <div class="cat-label" style="margin-top:28px">Social Insurance Programs</div>
-  <div class="card-grid">
-    <div class="card full-span">
+  </div><!-- /unemployment -->
+
+  <p class="cat-label" style="margin-top:36px;">Social Insurance Programs</p>
+  <div class="card-grid one-col">
+
+    <!-- PFML Card -->
+    <div class="card">
       <div class="card-head">
         <div class="card-head-left">
-          <div class="card-program">RCW 50A.10.030 <span class="change-badge">↑ 2026</span></div>
+          <div class="card-program">RCW 50A.10.030 <span class="change-badge">&#8593; 2026</span></div>
           <div class="card-name">Paid Family &amp; Medical Leave (PFML)</div>
           <div class="card-sub">WA Employment Security Department · paidleave.wa.gov</div>
         </div>
-        <div class="rate-box">
-          <span class="rate-val">1.13%</span>
-          <span class="rate-lbl">Total Premium · Up from 0.92%</span>
-        </div>
+        <div class="rate-box"><span class="rate-val">1.13%</span><span class="rate-lbl">Total Premium · Up from 0.92%</span></div>
       </div>
       <div class="card-body">
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
-          <div>
-            <div class="cat-label" style="margin-top:0">Rates &amp; Split</div>
-            <div class="data-row"><span class="data-label">Total Premium</span><span class="data-value teal">1.13%</span></div>
-            <div class="data-row"><span class="data-label">Employee Share</span><span class="data-value">71.43% (≈0.807%)</span></div>
-            <div class="data-row" id="pfml-detail-er"><span class="data-label">Employer Share (50+ EE)</span><span class="data-value">28.57% (≈0.323%)</span></div>
-            <div class="data-row"><span class="data-label">Prior Year Total</span><span class="data-value rose">0.92% (2025)</span></div>
-          </div>
-          <div>
-            <div class="cat-label" style="margin-top:0">Wage Base &amp; Thresholds</div>
-            <div class="data-row"><span class="data-label">2026 Wage Cap</span><span class="data-value teal">$184,500</span></div>
-            <div class="data-row"><span class="data-label">Qualifying Hours</span><span class="data-value">820 hrs in WA</span></div>
-            <div class="data-row"><span class="data-label">Job Protection Threshold</span><span class="data-value">25+ EE / 180 days</span></div>
-            <div class="data-row"><span class="data-label">Tips Included</span><span class="data-value">No — wages only</span></div>
-          </div>
-          <div>
-            <div class="cat-label" style="margin-top:0">Benefit Entitlements</div>
-            <div class="data-row"><span class="data-label">Family Leave Max</span><span class="data-value">12 weeks</span></div>
-            <div class="data-row"><span class="data-label">Medical Leave Max</span><span class="data-value">12 weeks</span></div>
-            <div class="data-row"><span class="data-label">Combined Cap</span><span class="data-value">16 weeks (+2 pregnancy)</span></div>
-            <div class="data-row"><span class="data-label">Wage Replacement</span><span class="data-value">Up to 90% lower earners</span></div>
-          </div>
-        </div>
-        <div class="callout warn" style="margin-top:14px">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Tax Type: Insurance Premium / Shared Contribution</div>
+
+        <div class="data-row"><span class="data-label" style="font-weight:600;color:var(--navy);">Rates &amp; Split</span><span class="data-value"></span></div>
+        <div class="data-row"><span class="data-label">Total Premium</span><span class="data-value teal">1.13%</span></div>
+        <div class="data-row"><span class="data-label">Employee Share</span><span class="data-value">71.43% (≈0.807%)</span></div>
+        <div class="data-row"><span class="data-label">Employer Share (50+ EE)</span><span class="data-value">28.57% (≈0.323%)</span></div>
+        <div class="data-row"><span class="data-label">Employer Share (&lt;50 EE)</span><span class="data-value">0% — EE collection/remittance still mandatory</span></div>
+        <div class="data-row"><span class="data-label">Prior Year Total</span><span class="data-value">0.92% (2025)</span></div>
+
+        <div class="data-row" style="margin-top:10px;"><span class="data-label" style="font-weight:600;color:var(--navy);">Wage Base &amp; Thresholds</span><span class="data-value"></span></div>
+        <div class="data-row"><span class="data-label">2026 Wage Cap</span><span class="data-value teal">$184,500</span></div>
+        <div class="data-row"><span class="data-label">Qualifying Hours</span><span class="data-value">820 hrs in WA</span></div>
+        <div class="data-row"><span class="data-label">Job Protection Threshold</span><span class="data-value">25+ EE / 180 days</span></div>
+        <div class="data-row"><span class="data-label">Tips Included</span><span class="data-value">No — wages only</span></div>
+
+        <div class="data-row" style="margin-top:10px;"><span class="data-label" style="font-weight:600;color:var(--navy);">Benefit Entitlements</span><span class="data-value"></span></div>
+        <div class="data-row"><span class="data-label">Family Leave Max</span><span class="data-value">12 weeks</span></div>
+        <div class="data-row"><span class="data-label">Medical Leave Max</span><span class="data-value">12 weeks</span></div>
+        <div class="data-row"><span class="data-label">Combined Cap</span><span class="data-value">16 weeks (+2 pregnancy)</span></div>
+        <div class="data-row"><span class="data-label">Maximum Weekly Benefit</span><span class="data-value teal">$1,647</span></div>
+        <div class="data-row"><span class="data-label">Wage Replacement</span><span class="data-value">Up to 90% lower earners</span></div>
+
+        <div class="callout warn" style="margin-top:14px;">
           <strong>HB 2345 — Effective June 11, 2026:</strong> Reallocates the internal split between family leave and medical leave premium shares to comply with IRS FICA guidance on medical leave taxability. The total 1.13% premium and the overall 71.43% / 28.57% EE/ER split are unchanged. Payroll systems that track family vs. medical components separately should review deduction logic before June 11.
         </div>
+
+        <div class="callout note" style="margin-top:8px;">
+          <strong>Note on rate authority:</strong> The Legislature retains authority to adjust PFML premium rates annually. ESD publishes the updated rate each October for the following calendar year. Verify the current-year rate at paidleave.wa.gov before each plan year.
+        </div>
+
         <div class="payer-row"><span class="payer-tag both">EE + ER</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://paidleave.wa.gov/employer-roles-responsibilities/" target="_blank" class="agency-badge badge-esd">Employer Guide</a>
           <a href="https://paidleave.wa.gov/updates/" target="_blank" class="agency-badge badge-esd">ESD Updates</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50A.10.030" target="_blank" class="agency-badge badge-rcw">RCW 50A.10.030</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50A" target="_blank" class="agency-badge badge-rcw">RCW Title 50A</a>
         </div>
-        <div class="verified" style="margin-top:8px">Verified May 2026</div>
+        <div style="font-size:0.68rem;color:var(--muted);margin-top:10px;">Verified May 2026</div>
       </div>
     </div>
 
-    <div class="card full-span">
+    <!-- WA Cares Card -->
+    <div class="card">
       <div class="card-head">
         <div class="card-head-left">
-          <div class="card-program">RCW 50B.04.080 <span class="change-badge">SB 5291</span></div>
+          <div class="card-program">RCW 50B.04.080 &nbsp;<span class="change-badge">SB 5291</span></div>
           <div class="card-name">WA Cares Fund (Long-Term Care)</div>
           <div class="card-sub">WA Employment Security Department · wacaresfund.wa.gov · Benefits statewide July 1, 2026</div>
         </div>
-        <div class="rate-box">
-          <span class="rate-val">0.58%</span>
-          <span class="rate-lbl">Employee Only · No Wage Cap</span>
-        </div>
+        <div class="rate-box"><span class="rate-val">0.58%</span><span class="rate-lbl">Employee Only · No Wage Cap</span></div>
       </div>
       <div class="card-body">
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
-          <div>
-            <div class="cat-label" style="margin-top:0">Rate &amp; Base</div>
-            <div class="data-row"><span class="data-label">Employee Rate</span><span class="data-value teal">0.58%</span></div>
-            <div class="data-row"><span class="data-label">Taxable Wage Cap</span><span class="data-value rose">None — all gross wages</span></div>
-            <div class="data-row"><span class="data-label">Employer Share</span><span class="data-value">None</span></div>
-            <div class="data-row"><span class="data-label">Applies to RSUs / Bonuses</span><span class="data-value rose">Yes</span></div>
-          </div>
-          <div>
-            <div class="cat-label" style="margin-top:0">Benefit Access</div>
-            <div class="data-row"><span class="data-label">Standard Pathway</span><span class="data-value">10 years contributions</span></div>
-            <div class="data-row"><span class="data-label">Alternate (3 of 6 yrs)</span><span class="data-value teal">Full benefit eligible</span></div>
-            <div class="data-row"><span class="data-label">Lifetime Benefit</span><span class="data-value">$36,500 + inflation adj.</span></div>
-            <div class="data-row"><span class="data-label">Benefits Statewide</span><span class="data-value teal">July 1, 2026</span></div>
-          </div>
-          <div>
-            <div class="cat-label" style="margin-top:0">Employer Obligations</div>
-            <div class="data-row"><span class="data-label">Withhold &amp; Remit</span><span class="data-value">Yes — via ESD</span></div>
-            <div class="data-row"><span class="data-label">Records Retention</span><span class="data-value">6 years</span></div>
-            <div class="data-row"><span class="data-label">Delinquency Interest</span><span class="data-value rose">1% / month</span></div>
-            <div class="data-row"><span class="data-label">Reporting System</span><span class="data-value">Shared with PFML (ESD)</span></div>
-          </div>
-        </div>
-        <div class="callout warn" style="margin-top:14px">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Tax Type: Insurance Premium / Employee-Only</div>
+
+        <div class="data-row"><span class="data-label" style="font-weight:600;color:var(--navy);">Rate &amp; Base</span><span class="data-value"></span></div>
+        <div class="data-row"><span class="data-label">Employee Rate</span><span class="data-value teal">0.58%</span></div>
+        <div class="data-row"><span class="data-label">Taxable Wage Cap</span><span class="data-value teal">None — all gross wages</span></div>
+        <div class="data-row"><span class="data-label">Employer Share</span><span class="data-value">None</span></div>
+        <div class="data-row"><span class="data-label">Applies to RSUs / Bonuses</span><span class="data-value">Yes</span></div>
+
+        <div class="data-row" style="margin-top:10px;"><span class="data-label" style="font-weight:600;color:var(--navy);">Benefit Access</span><span class="data-value"></span></div>
+        <div class="data-row"><span class="data-label">Standard Pathway</span><span class="data-value">10 years contributions</span></div>
+        <div class="data-row"><span class="data-label">Alternate (3 of 6 yrs)</span><span class="data-value">Full benefit eligible</span></div>
+        <div class="data-row"><span class="data-label">Lifetime Benefit</span><span class="data-value">$36,500 + inflation adj.</span></div>
+        <div class="data-row"><span class="data-label">Benefits Statewide</span><span class="data-value">July 1, 2026</span></div>
+
+        <div class="data-row" style="margin-top:10px;"><span class="data-label" style="font-weight:600;color:var(--navy);">Employer Obligations</span><span class="data-value"></span></div>
+        <div class="data-row"><span class="data-label">Withhold &amp; Remit</span><span class="data-value">Yes — via ESD</span></div>
+        <div class="data-row"><span class="data-label">Records Retention</span><span class="data-value">6 years</span></div>
+        <div class="data-row"><span class="data-label">Delinquency Interest</span><span class="data-value amber">1% / month</span></div>
+        <div class="data-row"><span class="data-label">Reporting System</span><span class="data-value">Shared with PFML (ESD)</span></div>
+
+        <div class="callout info" style="margin-top:14px;">
           <strong>SB 5291 (Effective January 1, 2026):</strong> New automatic exemption for temporary nonimmigrant visa holders (H-1B, L-1, TN, etc.) unless employee opts in. Active-duty military in civilian jobs may apply for exemption. Previously exempt employees may opt back in before July 1, 2028. Out-of-state workers who relocate after 3+ years of contributions may elect to continue coverage.
         </div>
-        <div class="callout info" style="margin-top:8px">
+
+        <div class="callout alert" style="margin-top:8px;">
           <strong>Common misconception:</strong> Some sources cite WA Cares as capped at the Social Security wage base. This is incorrect. WA Cares applies to all gross wages with no cap — including RSU vests, bonuses, PTO payouts, and severance.
         </div>
+
+        <div class="callout note" style="margin-top:8px;">
+          <strong>Note on rate authority:</strong> The Legislature retains authority to adjust the WA Cares premium rate. The 0.58% rate is set by statute; future modifications require legislative action. Verify at wacaresfund.wa.gov for any prospective changes.
+        </div>
+
         <div class="payer-row"><span class="payer-tag ee">Employee Only</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://wacaresfund.wa.gov" target="_blank" class="agency-badge badge-esd">WA Cares Fund</a>
           <a href="https://app.leg.wa.gov/billsummary?BillNumber=5291&Year=2025" target="_blank" class="agency-badge badge-rcw">SB 5291</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50B.04.080" target="_blank" class="agency-badge badge-rcw">RCW 50B.04.080</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50B" target="_blank" class="agency-badge badge-rcw">RCW Title 50B</a>
         </div>
-        <div class="verified" style="margin-top:8px">Verified May 2026</div>
+        <div style="font-size:0.68rem;color:var(--muted);margin-top:10px;">Verified May 2026</div>
       </div>
     </div>
-  </div>
 
-  <div class="cat-label" style="margin-top:28px">Workers' Compensation</div>
-  <div class="card-grid">
+  </div><!-- /social insurance -->
+
+  <p class="cat-label" style="margin-top:36px;">Workers' Compensation</p>
+  <div class="card-grid two-col">
+
+    <!-- L&I Employer -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1527,26 +1250,23 @@ main {
           <div class="card-name">Workers' Comp — Employer (L&amp;I)</div>
           <div class="card-sub">WA Dept. of Labor &amp; Industries</div>
         </div>
-        <div class="rate-box muted">
-          <span class="rate-val">Varies</span>
-          <span class="rate-lbl">Risk Class + Experience</span>
-        </div>
+        <div class="rate-box muted"><span class="rate-val">Varies</span><span class="rate-lbl">Risk Class + Experience</span></div>
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">Rate Basis</span><span class="data-value">Per hour worked</span></div>
-        <div class="data-row"><span class="data-label">Rate Setting</span><span class="data-value">L&I by risk class code</span></div>
+        <div class="data-row"><span class="data-label">Rate Setting</span><span class="data-value">L&amp;I by risk class code</span></div>
         <div class="data-row"><span class="data-label">Medical Aid Fund</span><span class="data-value">Shared ER + EE</span></div>
         <div class="data-row"><span class="data-label">Stay At Work Rate</span><span class="data-value">Shared ER + EE</span></div>
         <div class="data-row"><span class="data-label">SPF Employer (2026)</span><span class="data-value">$0.0956 / hour</span></div>
         <div class="payer-row"><span class="payer-tag er">Employer Paid</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
-          <a href="https://lni.wa.gov/insurance/workers-comp/" target="_blank" class="agency-badge badge-lni">L&amp;I Workers' Comp</a>
+          <a href="https://lni.wa.gov/insurance/rates-risk-classes/rates-for-workers-compensation/" target="_blank" class="agency-badge badge-lni">L&amp;I Rates for Workers' Compensation</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=51.16.035" target="_blank" class="agency-badge badge-rcw">RCW 51.16.035</a>
         </div>
       </div>
     </div>
+
+    <!-- L&I Employee -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1554,141 +1274,171 @@ main {
           <div class="card-name">Workers' Comp — Employee (L&amp;I)</div>
           <div class="card-sub">WA Dept. of Labor &amp; Industries</div>
         </div>
-        <div class="rate-box muted">
-          <span class="rate-val">Optional</span>
-          <span class="rate-lbl">Employer May Withhold</span>
-        </div>
+        <div class="rate-box muted"><span class="rate-val">Optional</span><span class="rate-lbl">Employer May Withhold</span></div>
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">Rate Basis</span><span class="data-value">Hourly or wage-based</span></div>
         <div class="data-row"><span class="data-label">Withholding</span><span class="data-value">Employer may withhold from wages</span></div>
         <div class="data-row"><span class="data-label">SPF Employee (2026)</span><span class="data-value">$0.0956 / hour</span></div>
-        <div class="callout note" style="margin-top:10px">Employers may elect to withhold the permitted employee share. This is not mandatory but is common practice. Full class-code rates are available in L&I's online rate calculator.</div>
+        <p style="font-size:0.83rem;color:var(--muted);margin-top:12px;line-height:1.5;">Employers may elect to withhold the permitted employee share. This is not mandatory but is common practice. Full class-code rates are available at L&amp;I's rates portal.</p>
         <div class="payer-row"><span class="payer-tag ee">Optional EE Withholding</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
-          <a href="https://lni.wa.gov/insurance/workers-comp/" target="_blank" class="agency-badge badge-lni">L&amp;I Rate Calculator</a>
+          <a href="https://lni.wa.gov/insurance/rates-risk-classes/rates-for-workers-compensation/" target="_blank" class="agency-badge badge-lni">L&amp;I Rates for Workers' Compensation</a>
           <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=51.16.035" target="_blank" class="agency-badge badge-rcw">RCW 51.16.035</a>
         </div>
       </div>
     </div>
-  </div>
+
+  </div><!-- /workers comp -->
 </section>
 
-<!-- ============================================================ LOCAL TAXES -->
-<section class="tab-section" id="tab-local">
+<!-- =====================================================
+     TAB: LOCAL TAXES
+===================================================== -->
+<section id="tab-local" class="tab-section">
   <div class="section-intro">
     <h2>Local Taxes — Seattle &amp; King County</h2>
     <p>Washington does not impose traditional local earned income taxes via payroll withholding. However, Seattle imposes specific employer-expense payroll taxes that apply to larger employers and high-wage employees. No employee withholding is required for these programs.</p>
   </div>
 
-  <div class="callout info" style="margin-bottom:24px">
+  <div class="callout info" style="margin-bottom:24px;">
     <strong>No local income tax withholding in Washington.</strong> Unlike Pennsylvania, Kentucky, and Ohio, Washington jurisdictions do not require employers to withhold local income taxes from employee wages. Seattle's programs below are employer-expense taxes, not employee withholding obligations.
   </div>
 
-  <div class="cat-label">Seattle Employer Payroll Taxes</div>
-  <div class="card-grid">
+  <p class="cat-label">Seattle Employer Payroll Taxes</p>
+  <div class="card-grid one-col">
+
+    <!-- JumpStart Card — Full Detail -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
           <div class="card-program">Seattle Municipal Code 5.38</div>
           <div class="card-name">JumpStart Payroll Expense Tax</div>
-          <div class="card-sub">City of Seattle — Business &amp; Payroll Expense Tax Program</div>
+          <div class="card-sub">City of Seattle — Business &amp; Payroll Expense Tax Program &nbsp;·&nbsp; <strong>Effective Jan 1, 2026. Thresholds adjusted annually based on CPI.</strong></div>
         </div>
-        <div class="rate-box amber">
-          <span class="rate-val">0.746–2.557%</span>
-          <span class="rate-lbl">Tiered Rate</span>
-        </div>
+        <div class="rate-box amber"><span class="rate-val">0.746–2.557%</span><span class="rate-lbl">Tiered Rate</span></div>
       </div>
       <div class="card-body">
-        <div class="data-row"><span class="data-label">Business Payroll Threshold</span><span class="data-value amber">≥ $9.07M annually</span></div>
-        <div class="data-row"><span class="data-label">Individual EE Threshold</span><span class="data-value amber">≥ $194,452 compensation</span></div>
-        <div class="data-row"><span class="data-label">Rate Basis</span><span class="data-value">Both thresholds must apply</span></div>
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Tax Type: Municipal Business Excise Tax</div>
+
+        <!-- Dual-Threshold Logic -->
+        <div class="callout info" style="margin-bottom:14px;">
+          <strong>Dual-Threshold Requirement:</strong> Tax applies <em>if and only if</em> the employer's 2025 macro-payroll is <strong>≥ $9,074,409</strong> AND the individual employee's 2026 compensation is <strong>≥ $194,452</strong>. Both conditions must be met independently.
+        </div>
+
+        <div class="data-row"><span class="data-label">Business Payroll Threshold (2026)</span><span class="data-value amber">≥ $9,074,409 annually</span></div>
+        <div class="data-row"><span class="data-label">Individual EE Compensation Threshold</span><span class="data-value">≥ $194,452</span></div>
+        <div class="data-row"><span class="data-label">Rate Basis</span><span class="data-value">Both thresholds must be met</span></div>
         <div class="data-row"><span class="data-label">Employee Withholding</span><span class="data-value">None — employer expense</span></div>
         <div class="data-row"><span class="data-label">Filing Frequency</span><span class="data-value">Annual (with Seattle)</span></div>
-        <table class="ref-table" style="margin-top:14px">
-          <thead><tr><th>Annual Payroll Tier</th><th>Rate</th></tr></thead>
-          <tbody>
-            <tr><td>$9.07M – $99.99M</td><td>0.746% – 1.4%</td></tr>
-            <tr><td>$100M+</td><td>Up to 2.557%</td></tr>
-          </tbody>
-        </table>
-        <div class="callout warn" style="margin-top:10px">
-          <strong>Verify annually:</strong> JumpStart thresholds and rate tiers are subject to adjustment. Confirm current-year figures directly with Seattle City Finance before filing.
+
+        <!-- Rate Matrix -->
+        <div style="margin-top:16px;margin-bottom:6px;">
+          <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">2026 Rate Matrix — Compensation Band × Macro Payroll Tier</div>
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Macro Payroll Tier (Prior Year)</th>
+                <th>$194,452 – $518,537<br><small style="font-weight:400;text-transform:none;letter-spacing:0;">(below $518,538)</small></th>
+                <th>≥ $518,538<br><small style="font-weight:400;text-transform:none;letter-spacing:0;">(comp band 2)</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Below $129,634,413</td>
+                <td><span class="matrix-rate">0.746%</span></td>
+                <td><span class="matrix-rate">1.811%</span></td>
+              </tr>
+              <tr>
+                <td>$129,634,413 – $1,296,344,132</td>
+                <td><span class="matrix-rate">0.746%</span></td>
+                <td><span class="matrix-rate">2.024%</span></td>
+              </tr>
+              <tr>
+                <td>≥ $1,296,344,132</td>
+                <td><span class="matrix-rate">1.492%</span></td>
+                <td><span class="matrix-rate high">2.557%</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.5;">
+            <strong>Compensation threshold:</strong> $518,538 (Seattle City Finance published, 2026 CPI-adjusted). Derived upper bound for prior tier: $518,537.99 (system-calculated boundary; not explicitly codified by City Finance).<br>
+            <strong>Source:</strong> Seattle City Finance (Payroll Expense Tax thresholds table, annual CPI-adjusted publication). Authority: SMC 5.38 (inflation-adjusted thresholds; administratively updated).
+          </div>
         </div>
+
+        <div class="callout warn" style="margin-top:12px;">
+          <strong>Verify annually:</strong> JumpStart thresholds are CPI-adjusted and published by Seattle City Finance each year — not amended via discrete ordinance. The $9,074,409 figure is the 2026 published value. Confirm current-year threshold directly with Seattle City Finance before filing.
+        </div>
+
+        <!-- Nexus Sourcing Section -->
+        <div style="margin-top:16px;">
+          <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Local Nexus Sourcing — Employee Assignment Methods</div>
+          <div class="callout info">
+            <strong>Primarily Assigned Method:</strong> Applies where ≥ 50% of an employee's service is performed within Seattle city limits. Employee is treated as a Seattle employee for the full compensation amount.<br><br>
+            <strong>Hours Worked Method:</strong> For mobile or remote workforces, prorate compensation based on the exact proportion of hours worked inside Seattle relative to total hours worked. Requires system configuration to track hours by work location.
+          </div>
+        </div>
+
         <div class="payer-row"><span class="payer-tag er">Employer Expense Only</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/payroll-expense-tax" target="_blank" class="agency-badge badge-seattle">Seattle City Finance</a>
         </div>
-        <div class="verified" style="margin-top:8px">Verify current thresholds with Seattle annually</div>
+        <div style="font-size:0.68rem;color:var(--muted);margin-top:8px;">Verify current thresholds with Seattle annually</div>
       </div>
     </div>
 
+    <!-- Social Housing Tax Card -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
-          <div class="card-program">Seattle Local Tax — SMC 5.37 <span class="change-badge">Eff. Jan 1, 2025</span></div>
+          <div class="card-program">Seattle Local Tax — SMC 5.37 &nbsp;·&nbsp; Eff. Jan 1, 2025</div>
           <div class="card-name">Seattle Social Housing Tax</div>
           <div class="card-sub">City of Seattle — Voter-Approved February 11, 2025</div>
         </div>
-        <div class="rate-box amber">
-          <span class="rate-val">5%</span>
-          <span class="rate-lbl">On Comp &gt; $1M / EE</span>
-        </div>
+        <div class="rate-box amber"><span class="rate-val">5%</span><span class="rate-lbl">On Comp &gt; $1M / EE</span></div>
       </div>
       <div class="card-body">
-        <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value amber">5%</span></div>
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Tax Type: Municipal Excise Tax</div>
+
+        <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value amber">5% Flat</span></div>
         <div class="data-row"><span class="data-label">Applies To</span><span class="data-value">Compensation &gt; $1M per EE in Seattle</span></div>
-        <div class="data-row"><span class="data-label">Business Payroll Minimum</span><span class="data-value teal">None — no minimum threshold</span></div>
+        <div class="data-row"><span class="data-label">Business Payroll Minimum</span><span class="data-value teal">None</span></div>
         <div class="data-row"><span class="data-label">Employee Withholding</span><span class="data-value">None — employer obligation only</span></div>
         <div class="data-row"><span class="data-label">Filing — 2025 (first year)</span><span class="data-value">Annual · due January 31, 2026</span></div>
-        <div class="data-row"><span class="data-label">Filing — 2026 onward</span><span class="data-value">Quarterly</span></div>
+        <div class="data-row"><span class="data-label">Filing — 2026 onward</span><span class="data-value amber">Quarterly installments</span></div>
         <div class="data-row"><span class="data-label">Compensation Definition</span><span class="data-value">Same as WA PFML definition</span></div>
-        <div class="callout info" style="margin-top:10px">
-          <strong>Key distinction from JumpStart:</strong> The Social Housing Tax has no minimum business payroll threshold. A business with only one Seattle employee earning over $1M is subject — even if total company payroll is well below the JumpStart threshold. Evaluate independently of JumpStart eligibility.
+
+        <div class="callout info" style="margin-top:14px;">
+          <strong>Key distinction from JumpStart:</strong> The Social Housing Tax has <em>no minimum business payroll threshold</em>. A business with only one Seattle employee earning over $1M is subject — even if total company payroll is well below the JumpStart threshold. Evaluate independently of JumpStart eligibility.
         </div>
-        <div class="callout warn" style="margin-top:8px">
+
+        <div class="callout warn" style="margin-top:8px;">
           <strong>Combined exposure:</strong> Businesses subject to both taxes face up to 2.557% JumpStart on compensation up to $1M, plus 5% Social Housing Tax on the portion above $1M — a combined rate of up to 7.557% on high-earner compensation in Seattle.
         </div>
+
+        <div class="callout note" style="margin-top:8px;">
+          <strong>Filing cadence source:</strong> 2025: Annual filing (due Jan 31, 2026). 2026+: Quarterly installments. Source: Seattle City Finance implementation guidance / Proposition 1A implementation materials. Note — the quarterly cadence transition is established by administrative guidance (implementation phase); it has not yet been fully codified in SMC text. Verify current filing requirements directly with Seattle City Finance.
+        </div>
+
+        <!-- Nexus Sourcing Section -->
+        <div style="margin-top:16px;">
+          <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Local Nexus Sourcing — Employee Assignment Methods</div>
+          <div class="callout info">
+            <strong>Primarily Assigned Method:</strong> Applies where ≥ 50% of an employee's service is performed within Seattle city limits.<br><br>
+            <strong>Hours Worked Method:</strong> For mobile or remote workforces, prorate compensation based on exact hours worked inside Seattle. Requires system-level work-location tracking.
+          </div>
+        </div>
+
         <div class="payer-row"><span class="payer-tag er">Employer Only</span></div>
-      </div>
-      <div class="card-foot">
         <div class="badge-row">
           <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/social-housing-tax" target="_blank" class="agency-badge badge-seattle">Seattle City Finance</a>
         </div>
-        <div class="verified" style="margin-top:8px">Verified May 2026 · Quarterly filing begins 2026</div>
+        <div style="font-size:0.68rem;color:var(--muted);margin-top:8px;">Verified May 2026 · Quarterly filing begins 2026</div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-head">
-        <div class="card-head-left">
-          <div class="card-program">Seattle — Verify Current Status</div>
-          <div class="card-name">Seattle E-Work Tax</div>
-          <div class="card-sub">City of Seattle — City Finance</div>
-        </div>
-        <div class="rate-box muted">
-          <span class="rate-val">Verify</span>
-          <span class="rate-lbl">Phase-Out / Suspension</span>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="data-row"><span class="data-label">Original Purpose</span><span class="data-value">COVID-era employer payroll tax</span></div>
-        <div class="data-row"><span class="data-label">Current Status</span><span class="data-value rose">Subject to phase-out/suspension</span></div>
-        <div class="callout alert" style="margin-top:10px">
-          <strong>Verify before assuming this tax does not apply.</strong> Employers should confirm the current status of the E-Work Tax directly with Seattle Revenue. Assuming phase-out without confirmation could result in filing deficiencies if the tax remains active.
-        </div>
-      </div>
-      <div class="card-foot">
-        <div class="badge-row">
-          <a href="https://www.seattle.gov/city-finance" target="_blank" class="agency-badge badge-seattle">Seattle Revenue</a>
-        </div>
-      </div>
-    </div>
-
+    <!-- Other Local Obligations -->
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1696,35 +1446,89 @@ main {
           <div class="card-name">Other Local Obligations</div>
           <div class="card-sub">City of Seattle · King County</div>
         </div>
-        <div class="rate-box muted">
-          <span class="rate-val">Varies</span>
-          <span class="rate-lbl">Program-Specific</span>
-        </div>
+        <div class="rate-box muted"><span class="rate-val">Varies</span><span class="rate-lbl">Program-Specific</span></div>
       </div>
       <div class="card-body">
-        <p style="font-size:0.85rem;color:var(--body);line-height:1.6;">Seattle and King County may impose additional local obligations including training-related programs, transit benefit requirements, and other employer-funded programs. These do not follow a single statewide code structure.</p>
-        <div class="callout info" style="margin-top:10px">
+        <p style="font-size:0.85rem;color:var(--body);line-height:1.6;margin-bottom:12px;">Seattle and King County may impose additional local obligations including training-related programs, transit benefit requirements, and other employer-funded programs. These do not follow a single statewide code structure.</p>
+        <div class="callout warn">
           <strong>Always verify:</strong> Check current Seattle Revenue guidance and King County business tax requirements for the most current local obligations applicable to your specific operations.
         </div>
-      </div>
-      <div class="card-foot">
-        <div class="badge-row">
+        <div class="badge-row" style="margin-top:12px;">
           <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses" target="_blank" class="agency-badge badge-seattle">Seattle Business Taxes</a>
           <a href="https://www.kingcounty.gov/en/dept/finance" target="_blank" class="agency-badge badge-seattle">King County Finance</a>
         </div>
       </div>
     </div>
-  </div>
+
+  </div><!-- /local cards -->
+
+  <!-- PHASE 5: System Implementation Metadata Block -->
+  <div class="metadata-block">
+    <h3>System Implementation Metadata Parameters</h3>
+    <div class="metadata-grid">
+
+      <div class="meta-item">
+        <div class="mi-label">Authority Level</div>
+        <div class="mi-val">
+          <strong>JumpStart:</strong> Municipal Business Excise Tax — SMC 5.38<br>
+          <strong>Social Housing Tax:</strong> Municipal Excise Tax — SMC 5.37 / Proposition 1A
+        </div>
+      </div>
+
+      <div class="meta-item">
+        <div class="mi-label">Collection Agent</div>
+        <div class="mi-val">
+          <strong>Both taxes:</strong> Seattle City Finance (Office of City Finance). Filed directly with Seattle — separate from ESD and L&amp;I. Not administered via state payroll agency.
+        </div>
+      </div>
+
+      <div class="meta-item">
+        <div class="mi-label">Preemption Status</div>
+        <div class="mi-val">
+          <strong>No state preemption</strong> on municipal excise tax models in Washington. Cities retain authority to impose local business excise taxes independent of state wage-based tax programs.
+        </div>
+        <div class="mi-note">WA does not preempt local payroll excise structures the way some states restrict local income taxes.</div>
+      </div>
+
+      <div class="meta-item">
+        <div class="mi-label">Multi-Employer Wage Cap Interaction — PFML</div>
+        <div class="mi-val">
+          The <strong>$184,500 PFML wage cap is per-employer</strong>. It does not transfer or aggregate across independent employers within the same calendar year. An employee working multiple jobs concurrently may have PFML premiums collected up to $184,500 at each employer independently.
+        </div>
+        <div class="mi-note">System note: No cross-employer wage base coordination is required or available for PFML. Each employer collects independently.</div>
+      </div>
+
+      <div class="meta-item">
+        <div class="mi-label">JumpStart Threshold Sourcing</div>
+        <div class="mi-val">
+          $9,074,409 (2026), as published by Seattle City Finance pursuant to CPI-adjusted thresholds under SMC 5.38. No discrete ordinance amendment is issued annually — the publication itself is the citable artifact.
+        </div>
+        <div class="mi-note">Source: Seattle City Finance (Payroll Expense Tax thresholds table, annual CPI-adjusted publication). Authority: SMC 5.38.</div>
+      </div>
+
+      <div class="meta-item">
+        <div class="mi-label">Social Housing Tax — Filing Cadence Source</div>
+        <div class="mi-val">
+          2025: Annual filing (due Jan 31, 2026). 2026+: Quarterly installments per City Finance implementation guidance.
+        </div>
+        <div class="mi-note">Administrative guidance (implementation phase). Not yet fully codified in SMC text as of May 2026. Verify with Seattle Director's Rules (5-37 / 5-38 series) for subsequent codification.</div>
+      </div>
+
+    </div>
+  </div><!-- /metadata-block -->
+
 </section>
 
-<!-- ============================================================ MISC TAXES -->
-<section class="tab-section" id="tab-misc">
+<!-- =====================================================
+     TAB: MISC. TAXES
+===================================================== -->
+<section id="tab-misc" class="tab-section">
   <div class="section-intro">
     <h2>Miscellaneous Washington Taxes</h2>
     <p>Additional Washington tax programs relevant to payroll professionals — not payroll withholding obligations, but important context for total compensation analysis and employer cost modeling.</p>
   </div>
-
   <div class="card-grid">
+
     <div class="card">
       <div class="card-head">
         <div class="card-head-left">
@@ -1732,22 +1536,17 @@ main {
           <div class="card-name">Capital Gains Tax</div>
           <div class="card-sub">WA Dept. of Revenue · Effective 2023</div>
         </div>
-        <div class="rate-box amber">
-          <span class="rate-val">7%</span>
-          <span class="rate-lbl">On LTCG &gt; $270,000</span>
-        </div>
+        <div class="rate-box amber"><span class="rate-val">7%</span><span class="rate-lbl">On LTCG &gt; $270,000</span></div>
       </div>
       <div class="card-body">
-        <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value">7%</span></div>
+        <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value amber">7%</span></div>
         <div class="data-row"><span class="data-label">2026 Exemption Threshold</span><span class="data-value">$270,000 long-term gains</span></div>
-        <div class="data-row"><span class="data-label">Payroll Withholding Required</span><span class="data-value rose">No</span></div>
+        <div class="data-row"><span class="data-label">Payroll Withholding Required</span><span class="data-value">No</span></div>
         <div class="data-row"><span class="data-label">Applies to RSU Vests</span><span class="data-value">No — RSUs taxed as ordinary income</span></div>
-        <div class="callout info" style="margin-top:10px">
+        <div class="callout info" style="margin-top:12px;">
           <strong>Payroll context:</strong> Not a withholding obligation, but highly relevant for employees with equity compensation, investment income, or other capital gains. Employees may need to make estimated tax payments. WA Cares (0.58%, no cap) does apply to RSU vests as ordinary income.
         </div>
-      </div>
-      <div class="card-foot">
-        <div class="badge-row">
+        <div class="badge-row" style="margin-top:10px;">
           <a href="https://dor.wa.gov/taxes-rates/capital-gains-tax" target="_blank" class="agency-badge badge-dor">WA DOR</a>
         </div>
       </div>
@@ -1760,21 +1559,16 @@ main {
           <div class="card-name">Business &amp; Occupation (B&amp;O) Tax</div>
           <div class="card-sub">WA Dept. of Revenue</div>
         </div>
-        <div class="rate-box muted">
-          <span class="rate-val">Varies</span>
-          <span class="rate-lbl">Gross Receipts Based</span>
-        </div>
+        <div class="rate-box muted"><span class="rate-val">Varies</span><span class="rate-lbl">Gross Receipts Based</span></div>
       </div>
       <div class="card-body">
         <div class="data-row"><span class="data-label">Tax Basis</span><span class="data-value">Gross receipts — not payroll</span></div>
         <div class="data-row"><span class="data-label">Employee Withholding</span><span class="data-value">None</span></div>
         <div class="data-row"><span class="data-label">Applies to All WA Businesses</span><span class="data-value">Yes</span></div>
-        <div class="callout info" style="margin-top:10px">
-          <strong>Payroll context:</strong> B&O is an employer gross receipts tax, not a payroll tax. However, registering for payroll in WA without an existing B&O account may trigger a review of B&O obligations. See the Nexus &amp; Registration tab for detail.
+        <div class="callout warn" style="margin-top:12px;">
+          <strong>Payroll context:</strong> B&amp;O is an employer gross receipts tax, not a payroll tax. However, registering for payroll in WA without an existing B&amp;O account may trigger a review of B&amp;O obligations. See the Nexus &amp; Registration tab for detail.
         </div>
-      </div>
-      <div class="card-foot">
-        <div class="badge-row">
+        <div class="badge-row" style="margin-top:10px;">
           <a href="https://dor.wa.gov/taxes-rates/business-occupation-tax" target="_blank" class="agency-badge badge-dor">WA DOR — B&amp;O</a>
         </div>
       </div>
@@ -1783,16 +1577,18 @@ main {
   </div>
 </section>
 
-<!-- ============================================================ NEXUS -->
-<section class="tab-section" id="tab-nexus">
+<!-- =====================================================
+     TAB: NEXUS & REGISTRATION
+===================================================== -->
+<section id="tab-nexus" class="tab-section">
   <div class="section-intro">
     <h2>Nexus &amp; Registration</h2>
     <p>When does Washington payroll nexus apply — and what obligations activate once you register? Use this reference before setting up a new state account.</p>
   </div>
 
-  <div class="cat-label">Does WA Payroll Nexus Apply?</div>
-  <div class="card card-grid one-col" style="margin-bottom:24px;display:block;">
-    <div class="card-body">
+  <div class="card full-span" style="margin-bottom:20px;">
+    <div class="card-head"><div class="card-head-left"><div class="card-name">Does WA Payroll Nexus Apply?</div></div></div>
+    <div class="card-body" style="padding:0;">
       <table class="ref-table">
         <thead>
           <tr>
@@ -1806,13 +1602,13 @@ main {
           <tr>
             <td>Employee lives and works in WA</td>
             <td><span class="yes-pill">Yes — Mandatory</span></td>
-            <td>SUI, EAF, PFML, WA Cares, L&I</td>
-            <td>Full registration required with ESD and L&I</td>
+            <td>SUI, EAF, PFML, WA Cares, L&amp;I</td>
+            <td>Full registration required with ESD and L&amp;I</td>
           </tr>
           <tr>
             <td>Remote employee hired, works from WA</td>
             <td><span class="yes-pill">Yes</span></td>
-            <td>SUI, EAF, PFML, WA Cares, L&I</td>
+            <td>SUI, EAF, PFML, WA Cares, L&amp;I</td>
             <td>Same as above — home state = work state for remote workers</td>
           </tr>
           <tr>
@@ -1831,11 +1627,11 @@ main {
             <td>Company has WA property or sales, no WA employees</td>
             <td><span class="no-pill">No Payroll Nexus</span></td>
             <td>None (payroll)</td>
-            <td>B&amp;O tax may apply separately through DOR — not through ESD/L&I</td>
+            <td>B&amp;O tax may apply separately through DOR — not through ESD/L&amp;I</td>
           </tr>
           <tr>
             <td>Seattle operations — employer above JumpStart threshold</td>
-            <td><span class="yes-pill">Seattle Tax Applies</span></td>
+            <td><span class="verify-pill">Seattle Tax Applies</span></td>
             <td>JumpStart Payroll Expense Tax</td>
             <td>Filed directly with Seattle City Finance — separate from ESD</td>
           </tr>
@@ -1844,49 +1640,51 @@ main {
     </div>
   </div>
 
-  <div class="cat-label">What Else Activates When You Register?</div>
-  <div class="card-grid">
+  <div class="card-grid two-col">
     <div class="card">
-      <div class="card-body" style="padding:20px;">
-        <p style="font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:14px;">Registering with ESD for SUI triggers:</p>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
-          <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>EAF assessment on the same $78,200 wage base (appears on same tax rate notice)</span></li>
-          <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>PFML reporting obligations through the ESD shared system</span></li>
-          <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>WA Cares Fund collection and remittance (same quarterly ESD report as of July 2023)</span></li>
+      <div class="card-head"><div class="card-head-left"><div class="card-name">What Else Activates When You Register?</div></div></div>
+      <div class="card-body">
+        <p style="font-size:0.85rem;font-weight:600;color:var(--navy);margin-bottom:10px;">Registering with ESD for SUI triggers:</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:16px;">
+          <li style="font-size:0.85rem;color:var(--body);display:flex;gap:8px;"><span style="color:var(--teal-deep);flex-shrink:0;">→</span>EAF assessment on the same $78,200 wage base (appears on same tax rate notice)</li>
+          <li style="font-size:0.85rem;color:var(--body);display:flex;gap:8px;"><span style="color:var(--teal-deep);flex-shrink:0;">→</span>PFML reporting obligations through the ESD shared system</li>
+          <li style="font-size:0.85rem;color:var(--body);display:flex;gap:8px;"><span style="color:var(--teal-deep);flex-shrink:0;">→</span>WA Cares Fund collection and remittance (same quarterly ESD report as of July 2023)</li>
+        </ul>
+        <p style="font-size:0.85rem;font-weight:600;color:var(--navy);margin-bottom:10px;">Registering with L&amp;I for Workers' Comp triggers:</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:7px;">
+          <li style="font-size:0.85rem;color:var(--body);display:flex;gap:8px;"><span style="color:var(--teal-deep);flex-shrink:0;">→</span>Separate account from ESD — do not conflate L&amp;I and ESD registrations</li>
+          <li style="font-size:0.85rem;color:var(--body);display:flex;gap:8px;"><span style="color:var(--teal-deep);flex-shrink:0;">→</span>Risk class assignment based on industry and job duties</li>
+          <li style="font-size:0.85rem;color:var(--body);display:flex;gap:8px;"><span style="color:var(--teal-deep);flex-shrink:0;">→</span>Hourly premium obligations beginning first day of employment</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-body" style="padding:20px;">
-        <p style="font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:14px;">Registering with L&I for Workers' Comp triggers:</p>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
-          <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>Separate account from ESD — do not conflate L&I and ESD registrations</span></li>
-          <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>Risk class assignment based on industry and job duties</span></li>
-          <li style="font-size:0.84rem;display:flex;gap:8px;"><span style="color:var(--teal-deep);font-weight:700;">→</span><span>Hourly premium obligations beginning first day of employment</span></li>
-        </ul>
+      <div class="card-head"><div class="card-head-left"><div class="card-name">Important — Business Nexus Consideration</div></div></div>
+      <div class="card-body">
+        <div class="callout warn">
+          Registering for Washington payroll taxes when not mandatory creates a business connection (nexus) to Washington that may trigger other business tax obligations — including B&amp;O tax through the Department of Revenue — even if the payroll registration itself is voluntary. Consult a qualified tax advisor before voluntarily registering in any new state to understand the full scope of obligations that may follow.
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="callout warn" style="margin-top:20px">
-    <strong>Important — Business Nexus Consideration:</strong> Registering for Washington payroll taxes when not mandatory creates a business connection (nexus) to Washington that may trigger other business tax obligations — including B&amp;O tax through the Department of Revenue — even if the payroll registration itself is voluntary. Consult a qualified tax advisor before voluntarily registering in any new state to understand the full scope of obligations that may follow.
   </div>
 </section>
 
-<!-- ============================================================ RECIPROCITY -->
-<section class="tab-section" id="tab-reciprocity">
+<!-- =====================================================
+     TAB: RECIPROCITY
+===================================================== -->
+<section id="tab-reciprocity" class="tab-section">
   <div class="section-intro">
     <h2>Reciprocity — Washington State</h2>
     <p>Washington has no personal income tax, which means it has no formal income tax reciprocity agreements with other states. However, this creates specific scenarios for multi-state employees that payroll professionals need to navigate carefully.</p>
   </div>
 
-  <div class="callout info" style="margin-bottom:24px">
+  <div class="callout info" style="margin-bottom:24px;">
     <strong>Why Washington has no reciprocity agreements:</strong> Reciprocity agreements allow residents of one state to be taxed only in their state of residence, not the state where they work. Because Washington imposes no personal income tax, there is nothing to reciprocate — WA residents working in another state owe no WA income tax regardless, and non-residents working in WA have no WA income tax liability either.
   </div>
 
-  <div class="cat-label">Border State Scenarios</div>
-  <div class="card" style="margin-bottom:24px;display:block;">
-    <div class="card-body">
+  <div class="card full-span" style="margin-bottom:20px;">
+    <div class="card-head"><div class="card-head-left"><div class="card-name">Border State Scenarios</div></div></div>
+    <div class="card-body" style="padding:0;">
       <table class="ref-table">
         <thead>
           <tr>
@@ -1906,31 +1704,31 @@ main {
           <tr>
             <td>Lives in WA, works in Oregon</td>
             <td><span class="no-pill">None</span></td>
-            <td><span class="yes-pill">OR Income Tax</span></td>
+            <td>OR Income Tax</td>
             <td>Withhold Oregon income tax; no WA withholding</td>
           </tr>
           <tr>
             <td>Lives in WA, works in Idaho</td>
             <td><span class="no-pill">None</span></td>
-            <td><span class="yes-pill">ID Income Tax</span></td>
+            <td>ID Income Tax</td>
             <td>Withhold Idaho income tax; no WA withholding</td>
           </tr>
           <tr>
             <td>Lives in Oregon, works in WA</td>
             <td><span class="no-pill">None</span></td>
-            <td><span class="yes-pill">OR Taxes WA Source Income</span></td>
+            <td>OR Taxes WA Source Income</td>
             <td>No WA withholding; employee files OR return for WA-source income</td>
           </tr>
           <tr>
             <td>Lives in Idaho, works in WA</td>
             <td><span class="no-pill">None</span></td>
-            <td><span class="partial-pill">ID May Apply</span></td>
+            <td>ID May Apply</td>
             <td>No WA withholding; employee may owe ID tax on WA-source income</td>
           </tr>
           <tr>
             <td>Works in both WA and another state (split-time)</td>
             <td><span class="no-pill">None for WA Portion</span></td>
-            <td><span class="partial-pill">Allocate by State</span></td>
+            <td>Allocate by State</td>
             <td>Allocate wages; withhold for non-WA state on non-WA portion</td>
           </tr>
         </tbody>
@@ -1938,98 +1736,151 @@ main {
     </div>
   </div>
 
-  <div class="cat-label">PFML &amp; SUI Multi-State Sourcing — The 4-Part Test</div>
-  <div class="card-grid">
-    <div class="card full-span">
-      <div class="card-body">
-        <p style="font-size:0.85rem;color:var(--body);margin-bottom:16px;line-height:1.65;">For PFML and SUI, Washington follows the federal four-part test to determine which state has jurisdiction. Apply each test in order — stop at the first test that produces a definitive answer.</p>
-        <table class="ref-table">
-          <thead><tr><th>Test (Apply in Order)</th><th>Rule</th><th>WA Applies If…</th></tr></thead>
-          <tbody>
-            <tr><td>1. Localization</td><td>Where is the work primarily performed?</td><td>Employee's work is localized to WA</td></tr>
-            <tr><td>2. Base of Operations</td><td>Where does the employee start/end their work?</td><td>Employee's base is in WA</td></tr>
-            <tr><td>3. Direction &amp; Control</td><td>Where is the employer directing work from?</td><td>Direction/control emanates from WA</td></tr>
-            <tr><td>4. Employee Residence</td><td>Where does the employee live?</td><td>Employee resides in WA (tiebreaker)</td></tr>
-          </tbody>
-        </table>
-        <div class="callout info" style="margin-top:12px">
-          <strong>Practical application:</strong> For a fully remote employee hired to work from their WA home, Test 1 (localization) produces a clear answer — WA PFML and SUI apply. For a traveling employee who splits time across states, Test 2 or 3 determines jurisdiction. Only one state collects SUI for any given employee.
-        </div>
+  <div class="card full-span">
+    <div class="card-head"><div class="card-head-left"><div class="card-name">PFML &amp; SUI Multi-State Sourcing — The 4-Part Test</div></div></div>
+    <div class="card-body">
+      <p style="font-size:0.85rem;color:var(--muted);margin-bottom:16px;">For PFML and SUI, Washington follows the federal four-part test to determine which state has jurisdiction. Apply each test in order — stop at the first test that produces a definitive answer.</p>
+      <table class="ref-table">
+        <thead>
+          <tr><th>Test (Apply in Order)</th><th>Rule</th><th>WA Applies If…</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1. Localization</td><td>Where is the work primarily performed?</td><td>Employee's work is localized to WA</td></tr>
+          <tr><td>2. Base of Operations</td><td>Where does the employee start/end their work?</td><td>Employee's base is in WA</td></tr>
+          <tr><td>3. Direction &amp; Control</td><td>Where is the employer directing work from?</td><td>Direction/control emanates from WA</td></tr>
+          <tr><td>4. Employee Residence</td><td>Where does the employee live?</td><td>Employee resides in WA (tiebreaker)</td></tr>
+        </tbody>
+      </table>
+      <div class="callout info" style="margin-top:14px;">
+        <strong>Practical application:</strong> For a fully remote employee hired to work from their WA home, Test 1 (localization) produces a clear answer — WA PFML and SUI apply. For a traveling employee who splits time across states, Test 2 or 3 determines jurisdiction. Only one state collects SUI for any given employee.
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ DEADLINES -->
-<section class="tab-section" id="tab-deadlines">
+<!-- =====================================================
+     TAB: DEADLINES
+===================================================== -->
+<section id="tab-deadlines" class="tab-section">
   <div class="section-intro">
     <h2>2026 Key Deadlines &amp; Reporting</h2>
     <p>Major filing, deposit, and compliance dates for Washington state programs and federal requirements. ESD quarterly reports cover SUI, PFML, and WA Cares simultaneously.</p>
   </div>
-
   <div class="deadline-list">
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Jan</div><div class="dl-day">31</div></div>
-      <div class="dl-info"><strong>Q4 2025 ESD Quarterly Report + Payment (SUI, PFML, WA Cares)</strong><p>File Q4 2025 wages for all three ESD programs. First report cycle before 2026 rate changes take effect.</p></div>
+      <div class="dl-info">
+        <strong>Q4 2025 ESD Quarterly Report + Payment (SUI, PFML, WA Cares)</strong>
+        <p>File Q4 2025 wages for all three ESD programs. First report cycle before 2026 rate changes take effect.</p>
+      </div>
       <span class="dl-tag quarterly">Quarterly</span>
     </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Jan</div><div class="dl-day">31</div></div>
-      <div class="dl-info"><strong>W-2 Furnishing to Employees + SSA Filing</strong><p>Provide 2025 W-2s to employees. File Copy A with SSA. Washington has no state W-2 filing requirement. <a href="https://www.irs.gov/businesses/general-business-topics/w-2-employer" target="_blank">IRS W-2 guidance →</a></p></div>
+      <div class="dl-info">
+        <strong>W-2 Furnishing to Employees + SSA Filing</strong>
+        <p>Provide 2025 W-2s to employees. File Copy A with SSA. Washington has no state W-2 filing requirement. <a href="https://www.irs.gov/businesses/general-business-topics/w-2-employer" target="_blank">IRS W-2 guidance →</a></p>
+      </div>
       <span class="dl-tag annual">Annual</span>
     </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Jan</div><div class="dl-day">31</div></div>
-      <div class="dl-info"><strong>FUTA Annual Return — IRS Form 940</strong><p>Annual FUTA return for 2025. Extended to Feb 10 if all deposits made on time. <a href="https://www.irs.gov/forms-pubs/about-form-940" target="_blank">IRS Form 940 →</a></p></div>
+      <div class="dl-info">
+        <strong>FUTA Annual Return — IRS Form 940</strong>
+        <p>Annual FUTA return for 2025. Extended to Feb 10 if all deposits made on time. <a href="https://www.irs.gov/forms-pubs/about-form-940" target="_blank">IRS Form 940 →</a></p>
+      </div>
       <span class="dl-tag annual">Annual</span>
     </div>
+
+    <div class="deadline-item">
+      <div class="dl-date"><div class="dl-month">Jan</div><div class="dl-day">31</div></div>
+      <div class="dl-info">
+        <strong>Seattle Social Housing Tax — 2025 Annual Return Due</strong>
+        <p>Annual filing due for 2025 Social Housing Tax liability. Beginning in 2026, this tax transitions to quarterly installment filing. <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/social-housing-tax" target="_blank">Seattle City Finance →</a></p>
+      </div>
+      <span class="dl-tag annual">Annual</span>
+    </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Apr</div><div class="dl-day">30</div></div>
-      <div class="dl-info"><strong>Q1 2026 ESD Quarterly Report + Payment</strong><p>First report at 2026 rates: PFML 1.13%, WA Cares 0.58%, SUI at assigned rate on $78,200 base. <a href="https://esd.wa.gov/employer-taxes" target="_blank">ESD Employer Portal →</a></p></div>
+      <div class="dl-info">
+        <strong>Q1 2026 ESD Quarterly Report + Payment</strong>
+        <p>First report at 2026 rates: PFML 1.13%, WA Cares 0.58%, SUI at assigned rate on $78,200 base. <a href="https://esd.wa.gov/employer-taxes" target="_blank">ESD Employer Portal →</a></p>
+      </div>
       <span class="dl-tag quarterly">Quarterly</span>
     </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Jun</div><div class="dl-day">11</div></div>
-      <div class="dl-info"><strong>PFML HB 2345 Effective — Premium Reallocation</strong><p>Internal reallocation of PFML family vs. medical premium shares for IRS FICA compliance. Total premium and EE/ER split unchanged. Review payroll system deduction logic.</p></div>
+      <div class="dl-info">
+        <strong>PFML HB 2345 Effective — Premium Reallocation</strong>
+        <p>Internal reallocation of PFML family vs. medical premium shares for IRS FICA compliance. Total premium and EE/ER split unchanged. Review payroll system deduction logic.</p>
+      </div>
       <span class="dl-tag compliance">Compliance</span>
     </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Jul</div><div class="dl-day">1</div></div>
-      <div class="dl-info"><strong>WA Cares Fund Benefits Available Statewide</strong><p>Eligible workers may apply for WA Cares benefits statewide. Employers should anticipate employee inquiries about benefit eligibility and exemption status.</p></div>
+      <div class="dl-info">
+        <strong>WA Cares Fund Benefits Available Statewide</strong>
+        <p>Eligible workers may apply for WA Cares benefits statewide. Employers should anticipate employee inquiries about benefit eligibility and exemption status.</p>
+      </div>
       <span class="dl-tag program">Program</span>
     </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Jul</div><div class="dl-day">31</div></div>
-      <div class="dl-info"><strong>Q2 2026 ESD Quarterly Report + Payment</strong><p>Second quarter filing for SUI, PFML, and WA Cares. <a href="https://esd.wa.gov/employer-taxes" target="_blank">ESD Employer Portal →</a></p></div>
+      <div class="dl-info">
+        <strong>Q2 2026 ESD Quarterly Report + Payment</strong>
+        <p>Second quarter filing for SUI, PFML, and WA Cares. <a href="https://esd.wa.gov/employer-taxes" target="_blank">ESD Employer Portal →</a></p>
+      </div>
       <span class="dl-tag quarterly">Quarterly</span>
     </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Oct</div><div class="dl-day">31</div></div>
-      <div class="dl-info"><strong>Q3 2026 ESD Quarterly Report + Payment</strong><p>Third quarter filing. ESD takes September 30 employer size snapshot (4-quarter average) — determines whether ER PFML share applies in 2027. <a href="https://esd.wa.gov/employer-taxes" target="_blank">ESD Employer Portal →</a></p></div>
+      <div class="dl-info">
+        <strong>Q3 2026 ESD Quarterly Report + Payment</strong>
+        <p>Third quarter filing. ESD takes September 30 employer size snapshot (4-quarter average) — determines whether ER PFML share applies in 2027. <a href="https://esd.wa.gov/employer-taxes" target="_blank">ESD Employer Portal →</a></p>
+      </div>
       <span class="dl-tag quarterly">Quarterly</span>
     </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Oct</div><div class="dl-day">~</div></div>
-      <div class="dl-info"><strong>ESD Announces 2027 PFML Premium Rate</strong><p>ESD recalculates the PFML rate annually in October based on prior year usage and fund solvency. Watch ESD announcements to update 2027 payroll budgets. <a href="https://paidleave.wa.gov/updates/" target="_blank">ESD Updates →</a></p></div>
+      <div class="dl-info">
+        <strong>ESD Announces 2027 PFML Premium Rate</strong>
+        <p>ESD recalculates the PFML rate annually in October based on prior year usage and fund solvency. Watch ESD announcements to update 2027 payroll budgets. <a href="https://paidleave.wa.gov/updates/" target="_blank">ESD Updates →</a></p>
+      </div>
       <span class="dl-tag annual">Annual</span>
     </div>
+
     <div class="deadline-item">
       <div class="dl-date"><div class="dl-month">Jan</div><div class="dl-day">31</div></div>
-      <div class="dl-info"><strong>Q4 2026 ESD Report + 2026 W-2 / Form 940 Cycle</strong><p>Q4 state program filings due. W-2 furnishing to employees and SSA filing for tax year 2026. Begin applying 2027 rates announced in October.</p></div>
+      <div class="dl-info">
+        <strong>Q4 2026 ESD Report + 2026 W-2 / Form 940 Cycle</strong>
+        <p>Q4 state program filings due. W-2 furnishing to employees and SSA filing for tax year 2026. Begin applying 2027 rates announced in October.</p>
+      </div>
       <span class="dl-tag annual">Annual (2027)</span>
     </div>
+
   </div>
 </section>
 
-<!-- ============================================================ GLOSSARY -->
-<section class="tab-section" id="tab-glossary">
+<!-- =====================================================
+     TAB: GLOSSARY
+===================================================== -->
+<section id="tab-glossary" class="tab-section">
   <div class="section-intro">
     <h2>Glossary</h2>
     <p>Key terms used throughout this reference. Definitions reflect how terms are applied in Washington payroll tax compliance contexts.</p>
   </div>
   <div class="glossary-grid">
     <dl class="gloss-item"><dt>Wage Base</dt><dd>The maximum amount of an employee's annual wages subject to a specific tax. Once an employee's wages reach the wage base for the year, that tax stops being collected. Washington's SUI wage base is $78,200 in 2026; Social Security's is $184,500. WA Cares has no wage base — it applies to all gross wages.</dd></dl>
-    <dl class="gloss-item"><dt>Experience Rating</dt><dd>A method of setting employer SUI tax rates based on the employer's own history of unemployment claims. Employers with fewer claims generally receive lower rates; those with more claims pay higher rates within the statutory range (0.27%–6.02% in WA).</dd></dl>
+    <dl class="gloss-item"><dt>Experience Rating</dt><dd>A method of setting employer SUI tax rates based on the employer's own history of unemployment claims. Employers with fewer claims generally receive lower rates; those with more claims pay higher rates within the statutory range (0.27%–6.03% in WA).</dd></dl>
     <dl class="gloss-item"><dt>Premium vs. Tax</dt><dd>Washington's PFML and WA Cares assessments are technically "premiums" — payments into an insurance fund — rather than taxes. This distinction affects how they are treated for federal tax purposes and is the reason behind the HB 2345 reallocation between family and medical leave shares.</dd></dl>
     <dl class="gloss-item"><dt>Nexus</dt><dd>A sufficient connection between a business and a state that creates a legal obligation to register, file, and pay taxes in that state. For payroll purposes, nexus is typically established when an employer has an employee working in the state.</dd></dl>
     <dl class="gloss-item"><dt>Reciprocity Agreement</dt><dd>A formal agreement between two states allowing residents of each state to pay income tax only in their state of residence, regardless of where they work. Washington has no such agreements because it has no personal income tax.</dd></dl>
@@ -2037,50 +1888,56 @@ main {
     <dl class="gloss-item"><dt>EAF (Employment Administration Fund)</dt><dd>A small Washington employer assessment added to the SUI rate, currently approximately 0.03%. It appears as a separate line on the ESD annual tax rate determination notice and shares the same $78,200 wage base as SUI.</dd></dl>
     <dl class="gloss-item"><dt>Voluntary Contribution</dt><dd>An optional additional SUI payment an employer can make to the state to reduce their experience-rated tax rate for the following year. Washington permits voluntary contributions and they can be a cost-effective strategy for employers near a rate tier boundary.</dd></dl>
     <dl class="gloss-item"><dt>SOC Code</dt><dd>Standard Occupational Classification code — a federal system for classifying workers by job type. Washington ESD requires a valid SOC code for every employee on quarterly wage reports. Filings submitted without valid SOC codes are rejected.</dd></dl>
-    <dl class="gloss-item"><dt>Supplemental Pension Fund (SPF)</dt><dd>A component of Washington's workers' compensation premium structure, set at $0.1912 per hour worked in 2026, split equally between employer ($0.0956) and employee ($0.0956). Separate from the Medical Aid Fund and other L&I components.</dd></dl>
+    <dl class="gloss-item"><dt>Supplemental Pension Fund (SPF)</dt><dd>A component of Washington's workers' compensation premium structure, set at $0.1912 per hour worked in 2026, split equally between employer ($0.0956) and employee ($0.0956). Separate from the Medical Aid Fund and other L&amp;I components.</dd></dl>
     <dl class="gloss-item"><dt>PFML Voluntary Plan</dt><dd>An employer-sponsored paid leave plan approved by ESD as an alternative to the state PFML program. Must provide benefits at least as generous as the state plan. Employers with approved voluntary plans do not remit to the state ESD fund.</dd></dl>
-    <dl class="gloss-item"><dt>JumpStart Payroll Expense Tax</dt><dd>Seattle's employer-paid payroll tax applying to businesses with annual payrolls of $9.07M or more, on employee compensation of $194,452 or more. Rates range from 0.746% to 2.557% based on payroll size tiers. An employer expense — not withheld from employees.</dd></dl>
+    <dl class="gloss-item"><dt>JumpStart Payroll Expense Tax</dt><dd>Seattle's employer-paid payroll tax applying to businesses with annual payrolls of $9,074,409 or more (2026), on individual employee compensation of $194,452 or more. Rates range from 0.746% to 2.557% based on a two-dimensional matrix of macro-payroll tier and compensation band. An employer expense — not withheld from employees.</dd></dl>
     <dl class="gloss-item"><dt>WA Cares Fund</dt><dd>Washington's mandatory, publicly funded long-term care insurance program — the first of its kind in the United States. Funded by a 0.58% employee payroll deduction on all gross wages with no cap. Benefits of up to $36,500 (inflation-adjusted) became available statewide July 1, 2026.</dd></dl>
     <dl class="gloss-item"><dt>B&amp;O Tax</dt><dd>Washington's Business &amp; Occupation tax — a gross receipts tax on business revenue, administered by the WA Department of Revenue. Not a payroll tax and not withheld from employee wages, but relevant when analyzing the full cost of doing business in Washington and when evaluating voluntary payroll registration (which may trigger B&amp;O review).</dd></dl>
+    <dl class="gloss-item"><dt>Delinquent SUI Rate</dt><dd>A penalty tax rate assigned by ESD to employers with missing quarterly returns or unresolved tax balances. Calculated as Rate Class 40 base (5.40%) + delinquency surcharge (2.00%) + delinquent social cost cap (0.75%) = 8.15%. With EAF: 8.18% all-in. Authority: RCW 50.29.025(2)(d).</dd></dl>
+    <dl class="gloss-item"><dt>Social Housing Tax</dt><dd>A 5% flat Seattle municipal excise tax on individual employee compensation exceeding $1,000,000, established by Proposition 1A (voter-approved February 2025). Effective January 1, 2025. No minimum business payroll threshold — unlike JumpStart. Employer obligation only; no employee withholding. Transitions to quarterly filing beginning 2026.</dd></dl>
   </div>
 </section>
 
-<!-- ============================================================ SOURCES -->
-<section class="tab-section" id="tab-sources">
+<!-- =====================================================
+     TAB: SOURCES
+===================================================== -->
+<section id="tab-sources" class="tab-section">
   <div class="section-intro">
     <h2>Official Sources &amp; References</h2>
     <p>Direct links to statutes, agency guidance, and official employer resources. Always verify at the primary source before making compliance decisions.</p>
   </div>
 
-  <div class="cat-label">Washington State — Official Agencies</div>
+  <p class="cat-label">Washington State — Official Agencies</p>
   <div class="sources-grid">
     <a href="https://esd.wa.gov" target="_blank" class="source-card"><div class="sc-cat">Agency</div><div class="sc-title">WA Employment Security Department (ESD)</div><div class="sc-desc">Administers SUI, EAF, PFML, and WA Cares Fund reporting. Quarterly employer portal, rate notices, and employer guides.</div><div class="sc-url">esd.wa.gov</div></a>
     <a href="https://paidleave.wa.gov" target="_blank" class="source-card"><div class="sc-cat">PFML Program</div><div class="sc-title">Washington Paid Family &amp; Medical Leave</div><div class="sc-desc">2026 premium rates, employer toolkit, required posters, HB 2345 update details, voluntary plan information.</div><div class="sc-url">paidleave.wa.gov</div></a>
     <a href="https://wacaresfund.wa.gov" target="_blank" class="source-card"><div class="sc-cat">WA Cares Fund</div><div class="sc-title">WA Cares Fund — Official Site</div><div class="sc-desc">Program overview, exemption application portal, benefit eligibility, employer reporting requirements, SB 5291 updates.</div><div class="sc-url">wacaresfund.wa.gov</div></a>
-    <a href="https://lni.wa.gov/insurance/workers-comp/" target="_blank" class="source-card"><div class="sc-cat">Workers' Compensation</div><div class="sc-title">L&amp;I Workers' Compensation</div><div class="sc-desc">Risk class rates, SPF details, Stay At Work program, L&I online rate calculator, employer registration.</div><div class="sc-url">lni.wa.gov</div></a>
+    <a href="https://lni.wa.gov/insurance/workers-comp/" target="_blank" class="source-card"><div class="sc-cat">Workers' Compensation</div><div class="sc-title">L&amp;I Workers' Compensation</div><div class="sc-desc">Risk class rates, SPF details, Stay At Work program, employer registration, workers' comp overview.</div><div class="sc-url">lni.wa.gov/insurance/workers-comp/</div></a>
+    <a href="https://lni.wa.gov/insurance/rates-risk-classes/rates-for-workers-compensation/" target="_blank" class="source-card"><div class="sc-cat">Workers' Compensation Rates</div><div class="sc-title">L&amp;I Rates for Workers' Compensation</div><div class="sc-desc">Official L&amp;I rates portal — risk class rate lookup, SPF rates, employer and employee premium detail for 2026.</div><div class="sc-url">lni.wa.gov/insurance/rates-risk-classes/rates-for-workers-compensation/</div></a>
     <a href="https://lni.wa.gov/workers-rights/wages/minimum-wage/" target="_blank" class="source-card"><div class="sc-cat">Wage Compliance</div><div class="sc-title">L&amp;I Minimum Wage</div><div class="sc-desc">Current minimum wage, youth wage rules, industry exceptions, local jurisdiction overrides including Seattle.</div><div class="sc-url">lni.wa.gov/workers-rights/wages</div></a>
-    <a href="https://dor.wa.gov" target="_blank" class="source-card"><div class="sc-cat">Tax Agency</div><div class="sc-title">WA Department of Revenue</div><div class="sc-desc">Business &amp; Occupation tax, capital gains tax, and other WA business tax obligations. Separate from ESD and L&I.</div><div class="sc-url">dor.wa.gov</div></a>
+    <a href="https://dor.wa.gov" target="_blank" class="source-card"><div class="sc-cat">Tax Agency</div><div class="sc-title">WA Department of Revenue</div><div class="sc-desc">Business &amp; Occupation tax, capital gains tax, and other WA business tax obligations. Separate from ESD and L&amp;I.</div><div class="sc-url">dor.wa.gov</div></a>
     <a href="https://www.business.wa.gov/site/alias__business/878/small-business-guide--payroll.aspx" target="_blank" class="source-card"><div class="sc-cat">Employer Guide</div><div class="sc-title">WA Small Business Payroll Guide</div><div class="sc-desc">State of Washington's plain-language guide to payroll registration and compliance obligations for employers.</div><div class="sc-url">business.wa.gov</div></a>
   </div>
 
-  <div class="cat-label" style="margin-top:28px">Washington Statutes — Revised Code of Washington (RCW)</div>
+  <p class="cat-label" style="margin-top:32px;">Washington Statutes — Revised Code of Washington (RCW)</p>
   <div class="sources-grid">
-    <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50.29.025" target="_blank" class="source-card"><div class="sc-cat">Statute</div><div class="sc-title">RCW 50.29.025 — SUI Tax Rates</div><div class="sc-desc">Statutory authority for Washington State Unemployment Insurance experience rating and employer tax rate assignment.</div><div class="sc-url">app.leg.wa.gov/rcw · 50.29.025</div></a>
+    <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50.29.025" target="_blank" class="source-card"><div class="sc-cat">Statute</div><div class="sc-title">RCW 50.29.025 — SUI Tax Rates</div><div class="sc-desc">Statutory authority for Washington State Unemployment Insurance experience rating and employer tax rate assignment. Includes delinquent rate structure per subsection (2)(d).</div><div class="sc-url">app.leg.wa.gov/rcw · 50.29.025</div></a>
     <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50.24.014" target="_blank" class="source-card"><div class="sc-cat">Statute</div><div class="sc-title">RCW 50.24.014 — Employment Administration Fund</div><div class="sc-desc">Statutory authority for the EAF assessment — the add-on to SUI rates administered by ESD.</div><div class="sc-url">app.leg.wa.gov/rcw · 50.24.014</div></a>
     <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50A.10.030" target="_blank" class="source-card"><div class="sc-cat">Statute</div><div class="sc-title">RCW 50A.10.030 — PFML Premiums</div><div class="sc-desc">Statutory authority for PFML premium rates, wage base, and employer/employee contribution structure.</div><div class="sc-url">app.leg.wa.gov/rcw · 50A.10.030</div></a>
     <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=50B.04.080" target="_blank" class="source-card"><div class="sc-cat">Statute</div><div class="sc-title">RCW 50B.04.080 — WA Cares Premiums &amp; Exemptions</div><div class="sc-desc">Statutory authority for WA Cares Fund premium rate, exemption categories, and employer obligations.</div><div class="sc-url">app.leg.wa.gov/rcw · 50B.04.080</div></a>
-    <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=51.16.035" target="_blank" class="source-card"><div class="sc-cat">Statute</div><div class="sc-title">RCW 51.16.035 — Workers' Compensation Premiums</div><div class="sc-desc">Statutory basis for L&I workers' compensation premium calculations, employer and employee shares.</div><div class="sc-url">app.leg.wa.gov/rcw · 51.16.035</div></a>
+    <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=51.16.035" target="_blank" class="source-card"><div class="sc-cat">Statute</div><div class="sc-title">RCW 51.16.035 — Workers' Compensation Premiums</div><div class="sc-desc">Statutory basis for L&amp;I workers' compensation premium calculations, employer and employee shares.</div><div class="sc-url">app.leg.wa.gov/rcw · 51.16.035</div></a>
     <a href="https://app.leg.wa.gov/rcw/default.aspx?cite=49.46" target="_blank" class="source-card"><div class="sc-cat">Statute</div><div class="sc-title">RCW 49.46 — Minimum Wage Act</div><div class="sc-desc">Washington's minimum wage law — annual adjustments, youth wage, enforcement, and overtime provisions.</div><div class="sc-url">app.leg.wa.gov/rcw · 49.46</div></a>
     <a href="https://app.leg.wa.gov/billsummary?BillNumber=5291&Year=2025" target="_blank" class="source-card"><div class="sc-cat">2025 Legislation</div><div class="sc-title">SB 5291 — WA Cares 2026 Amendments</div><div class="sc-desc">Major WA Cares reform effective January 1, 2026 — exemption expansion, visa holder auto-exemption, out-of-state coverage, supplemental LTC insurance framework.</div><div class="sc-url">app.leg.wa.gov · SB 5291</div></a>
   </div>
 
-  <div class="cat-label" style="margin-top:28px">Seattle Local</div>
+  <p class="cat-label" style="margin-top:32px;">Seattle Local</p>
   <div class="sources-grid">
-    <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/payroll-expense-tax" target="_blank" class="source-card"><div class="sc-cat">Seattle</div><div class="sc-title">Seattle JumpStart Payroll Expense Tax</div><div class="sc-desc">Official Seattle City Finance page for the JumpStart tax — current thresholds, rate tables, filing instructions, and employer FAQ.</div><div class="sc-url">seattle.gov/city-finance</div></a>
-    <a href="https://www.seattle.gov/city-finance" target="_blank" class="source-card"><div class="sc-cat">Seattle</div><div class="sc-title">Seattle City Finance — Business Taxes</div><div class="sc-desc">Hub for all Seattle business tax programs including Social Housing Tax, E-Work Tax status, and other local obligations.</div><div class="sc-url">seattle.gov/city-finance</div></a>
+    <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/payroll-expense-tax" target="_blank" class="source-card"><div class="sc-cat">Seattle</div><div class="sc-title">Seattle JumpStart Payroll Expense Tax</div><div class="sc-desc">Official Seattle City Finance page for the JumpStart tax — current thresholds, rate tables, filing instructions, and employer FAQ. Primary source for annual CPI-adjusted threshold values.</div><div class="sc-url">seattle.gov/city-finance</div></a>
+    <a href="https://www.seattle.gov/city-finance/business-taxes-and-licenses/seattle-taxes/social-housing-tax" target="_blank" class="source-card"><div class="sc-cat">Seattle</div><div class="sc-title">Seattle Social Housing Tax (Proposition 1A)</div><div class="sc-desc">Official Seattle City Finance page for the Social Housing Tax — rates, filing requirements, quarterly cadence guidance, and employer obligations.</div><div class="sc-url">seattle.gov/city-finance</div></a>
+    <a href="https://www.seattle.gov/city-finance" target="_blank" class="source-card"><div class="sc-cat">Seattle</div><div class="sc-title">Seattle City Finance — Business Taxes Hub</div><div class="sc-desc">Hub for all Seattle business tax programs — filing portals, Director's Rules, and current compliance guidance.</div><div class="sc-url">seattle.gov/city-finance</div></a>
   </div>
 
-  <div class="cat-label" style="margin-top:28px">Federal Sources</div>
+  <p class="cat-label" style="margin-top:32px;">Federal Sources</p>
   <div class="sources-grid">
     <a href="https://www.irs.gov/publications/p15" target="_blank" class="source-card"><div class="sc-cat">IRS</div><div class="sc-title">IRS Publication 15 — Employer's Tax Guide</div><div class="sc-desc">Federal withholding tables, FICA rates, deposit schedules, supplemental wage rules, and employer responsibilities.</div><div class="sc-url">irs.gov · Publication 15</div></a>
     <a href="https://www.ssa.gov/oact/cola/cbb.html" target="_blank" class="source-card"><div class="sc-cat">SSA</div><div class="sc-title">Social Security Contribution &amp; Benefit Base</div><div class="sc-desc">Official SSA source for the annual Social Security taxable wage base — $184,500 for 2026.</div><div class="sc-url">ssa.gov · COLA/CBB</div></a>
@@ -2089,161 +1946,163 @@ main {
   </div>
 </section>
 
-<!-- ============================================================ ABOUT -->
-<section class="tab-section" id="tab-about">
+<!-- =====================================================
+     TAB: ABOUT — Phase 1: Full replacement
+===================================================== -->
+<section id="tab-about" class="tab-section">
   <div class="section-intro">
     <h2>About This Tool</h2>
-    <p>A practitioner-built reference for payroll professionals — source-linked, structured, and designed to bridge the gap between available information and accessible information.</p>
   </div>
-
   <div class="about-layout">
-    <div class="about-main">
-      <h3>What This Is — and Why It Exists</h3>
-      <p>The statutes are public. The agency guidance is published. The employer guides exist. But for many payroll professionals, access to this information depends on what subscription their employer carries, what platform they work in, or whether someone with more experience happened to point them in the right direction.</p>
-      <p>This tool is designed to put that information where practitioners can actually reach it — organized the way a payroll tax professional thinks through a state: What is the obligation? What's the wage base and rate? Who pays it? What does registering trigger? Where do I go to verify it myself?</p>
-      <p>The Washington State edition started with a specific project: working on the software design for the Seattle JumpStart Payroll Expense Tax update that took effect in 2025. That work required a full pass through the Washington payroll tax landscape — the RCW sections, ESD employer guides, WA Cares Fund amendments, PFML rate changes, and nexus implications. The map was already being built. This tool is that map, structured for reuse.</p>
-      <p>This is the first in a planned series of state-specific payroll tax reference tools. Pennsylvania, Kentucky, and Ohio — states with layered local income tax structures — are next. Cross-state comparison guides on PFML programs, SUI wage bases, and reciprocity agreements are part of the roadmap.</p>
-      <p><em>Every rate in this tool is linked to its source. Every program card identifies the administering agency. The goal is not to replace the primary sources — it is to make them findable.</em></p>
 
-      <h3 style="margin-top:28px">About the Author</h3>
-      <p><strong>Dorothy Chaloult, CPP</strong> is a payroll tax compliance professional with over 23 years of experience in payroll tax and more than 20 years working within payroll tax calculation engine software — the systems that perform the actual calculations when organizations process payroll. Her work sits at the intersection of deep regulatory knowledge and the technology that operationalizes it: translating statutory requirements into calculation logic, compliance workflows, and implementation design.</p>
-      <p>She holds the Certified Payroll Professional (CPP) designation and has worked across multi-state and multi-jurisdiction payroll environments, with particular depth in tax calculation engine architecture, multi-state withholding, SUI experience rating, and the design of compliance processes that scale.</p>
+    <div class="about-main">
+      <h3>About This Tool</h3>
+      <p>A practitioner-built reference for payroll professionals—source-linked, structured, and designed to translate complex statutory requirements into clear, operational guidance.</p>
+
+      <h4>Purpose &amp; Origin</h4>
+      <p>Statutes, agency rules, and employer guidance are publicly available, but critical compliance details are often fragmented across multiple sources or embedded within costly software platforms. This tool consolidates Washington payroll tax requirements in the way practitioners evaluate them: defining employer obligations, identifying wage bases, clarifying nexus and sourcing rules, and linking directly to primary authority.</p>
+      <p>This reference was developed through detailed analysis of Seattle's payroll tax framework, including the implementation of Proposition 1A (Social Housing Tax). Mapping these requirements required extensive review of RCWs, WACs, and agency guidance. The result is a structured, repeatable reference designed to support accurate compliance and system implementation.</p>
+      <p>Each rate, wage base, and threshold links directly to its source. The intent is not to replace primary law, but to make it immediately accessible and verifiable for practitioners.</p>
     </div>
 
     <div class="about-sidebar">
       <div class="contact-card">
         <h3>Contact</h3>
         <div class="contact-line">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           <a href="mailto:dorothy.chaloult@gmail.com">dorothy.chaloult@gmail.com</a>
         </div>
         <div class="contact-line">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          <a href="https://www.linkedin.com/in/dorothy-chaloult-cpp/" target="_blank">linkedin.com/in/dorothy-chaloult-cpp</a>
+          <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <a href="https://www.linkedin.com/in/dorothy-chaloult-cpp" target="_blank">linkedin.com/in/dorothy-chaloult-cpp</a>
         </div>
       </div>
 
       <div class="disclaimer-card">
-        <strong>Disclaimer</strong><br><br>
-        This tool is for informational use only. Rates, thresholds, and program rules are subject to change. Always verify current requirements at official sources before making compliance decisions.<br><br>
+        <strong>Disclaimer</strong><br>
+        For informational use only. Rates, thresholds, and program rules are subject to change. Always verify current requirements at official sources before making compliance decisions.<br><br>
         This tool does not constitute legal, tax, or accounting advice. Consult a qualified advisor for guidance specific to your organization's circumstances.<br><br>
         <em>Last verified: May 2026</em>
       </div>
     </div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:48px;padding-top:24px;border-top:1px solid var(--border-light);font-size:0.78rem;color:var(--muted);">
+    <strong>Washington State Payroll Tax Reference · Tax Year 2026</strong><br>
+    © 2026 Dorothy Chaloult, CPP · <a href="mailto:dorothy.chaloult@gmail.com">dorothy.chaloult@gmail.com</a> · <a href="https://www.linkedin.com/in/dorothy-chaloult-cpp" target="_blank">linkedin.com/in/dorothy-chaloult-cpp</a><br>
+    For informational use only. Verify all rates and requirements at official sources before making compliance decisions.
   </div>
 </section>
 
 </main>
 
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
-<footer class="site-footer">
-  <div>
-    <strong>Washington State Payroll Tax Reference · Tax Year 2026</strong><br>
-    © 2026 Dorothy Chaloult, CPP &nbsp;·&nbsp;
-    <a href="mailto:dorothy.chaloult@gmail.com">dorothy.chaloult@gmail.com</a> &nbsp;·&nbsp;
-    <a href="https://www.linkedin.com/in/dorothy-chaloult-cpp/" target="_blank">linkedin.com/in/dorothy-chaloult-cpp</a><br>
-    For informational use only. Verify all rates and requirements at official sources before making compliance decisions.
-  </div>
-</footer>
-
-<!-- =========================================================
-     JAVASCRIPT
-     ========================================================= -->
 <script>
-/* ---- Tab navigation ---- */
-function showTab(id, btn) {
+// =====================================================
+// TAB NAVIGATION
+// =====================================================
+function showTab(tabId, btn) {
   document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-  document.getElementById('tab-' + id).classList.add('active');
+  const target = document.getElementById('tab-' + tabId);
+  if (target) target.classList.add('active');
   if (btn) btn.classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-/* ---- Global employer size toggle ---- */
-function setEmployerSize(val) {
-  const erRows = document.querySelectorAll('#pfml-er-row, #pfml-detail-er');
-  erRows.forEach(row => {
-    if (val === 'small') {
-      row.style.opacity = '0.4';
-      row.title = 'Not required for employers with fewer than 50 employees';
-    } else {
-      row.style.opacity = '1';
-      row.title = '';
-    }
+// =====================================================
+// EMPLOYER SIZE TOGGLE
+// =====================================================
+function updateEmployerSize(size) {
+  // Update PFML employer share display based on employer size selection
+  // Large (50+): 28.57% employer share
+  // Small (<50): 0% employer share (employee portion still collected)
+  const isSmall = size === 'small';
+  document.querySelectorAll('.pfml-er-share').forEach(el => {
+    el.textContent = isSmall ? '0% (EE collection still required)' : '28.57% (≈0.323%)';
   });
-  // sync calculator
-  const calcSize = document.getElementById('c-size');
-  if (calcSize) calcSize.value = val;
 }
 
-/* ---- Calculator ---- */
-function fmt(n) {
-  return '$' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+// =====================================================
+// DATA CONFIGURATION — 2026
+// =====================================================
 
-function runCalc() {
-  const wages     = parseFloat(document.getElementById('c-wages').value) || 0;
-  const periods   = parseInt(document.getElementById('c-period').value);
-  const size      = document.getElementById('c-size').value;
-  const waExempt  = document.getElementById('c-wacares').value === 'yes';
-  const seattle   = document.getElementById('c-seattle').checked;
-  const addlMed   = document.getElementById('c-addlmed').checked;
+// SUI Rate Data
+const suiData2026 = {
+  wageBase: 78200,
+  rateRange: { min: 0.0027, max: 0.0603 },
+  rateClasses: 40,
+  experienceRateRange: { min: 0.0000, max: 0.0540 },
+  socialCostFactorCap: 0.0060,
+  socialCostFactorDelinquentCap: 0.0075,
+  eafRate: 0.0003,
+  newEmployerMultiplier: 1.15,
+  delinquentRate: {
+    base: 0.0540,        // Rate Class 40 base
+    penalty: 0.0200,     // Statutory delinquency surcharge
+    socialCap: 0.0075,   // Delinquent social cost cap
+    total: 0.0815,       // = 5.40% + 2.00% + 0.75%
+    totalWithEAF: 0.0818, // All-in including EAF
+    authority: 'RCW 50.29.025(2)(d)'
+  }
+};
 
-  const SS_BASE   = 184500;
-  const PFML_BASE = 184500;
-  const SUI_BASE  = 78200;
-  const FUTA_BASE = 7000;
+// PFML Rate Data
+const pfmlData2026 = {
+  totalRate: 0.0113,
+  wageBase: 184500,
+  eeShare: 0.7143,       // 71.43%
+  erShareLarge: 0.2857,  // 28.57% for 50+ EE
+  erShareSmall: 0.0000,  // 0% for <50 EE
+  maxWeeklyBenefit: 1647,
+  familyLeaveMaxWeeks: 12,
+  medicalLeaveMaxWeeks: 12,
+  combinedCapWeeks: 16
+};
 
-  // Annual figures
-  const ssWages   = Math.min(wages, SS_BASE);
-  const pfmlWages = Math.min(wages, PFML_BASE);
-  const suiWages  = Math.min(wages, SUI_BASE);
-  const futaWages = Math.min(wages, FUTA_BASE);
+// WA Cares Rate Data
+const waCareData2026 = {
+  rate: 0.0058,
+  wageBase: null, // No cap
+  erShare: 0.0000,
+  lifetimeBenefit: 36500
+};
 
-  const eeSS      = ssWages * 0.062;
-  const eeMed     = wages * 0.0145;
-  const eeAddlMed = addlMed ? Math.max(0, wages - 200000) * 0.009 : 0;
-  const eePFML    = pfmlWages * 0.0113 * 0.7143;
-  const eeWACares = waExempt ? 0 : wages * 0.0058;
+// JumpStart Tax Data
+const jumpStartData2026 = {
+  businessPayrollThreshold: 9074409,
+  individualCompThreshold: 194452,
+  compBand2Threshold: 518538,        // Published threshold (≥ $518,538)
+  compBand1Upper: 518537.99,         // Derived system boundary
+  macroTier1Max: 129634413,
+  macroTier2Max: 1296344132,
+  // Rate matrix [compBand][macroTier]: rates[band][tier]
+  rates: {
+    band1: { tier1: 0.00746, tier2: 0.00746, tier3: 0.01492 }, // $194,452–$518,537
+    band2: { tier1: 0.01811, tier2: 0.02024, tier3: 0.02557 }  // ≥ $518,538
+  },
+  source: 'Seattle City Finance (CPI-adjusted, SMC 5.38)',
+  effectiveDate: '2026-01-01'
+};
 
-  const erSS      = ssWages * 0.062;
-  const erMed     = wages * 0.0145;
-  const erPFML    = size === 'large' ? pfmlWages * 0.0113 * 0.2857 : 0;
-  const erSUI     = suiWages * 0.027; // mid-range estimate
-  const erFUTA    = futaWages * 0.006;
+// Social Housing Tax Data
+const socialHousingData2026 = {
+  rate: 0.05,
+  compensationThreshold: 1000000,
+  businessPayrollMinimum: null, // None
+  filingCadence2025: 'Annual',
+  filingCadence2026: 'Quarterly',
+  filingCadenceSource: 'Administrative guidance (implementation phase)',
+  authority: 'SMC 5.37 / Proposition 1A'
+};
 
-  const eeTot = eeSS + eeMed + eeAddlMed + eePFML + eeWACares;
-  const erTot = erSS + erMed + erPFML + erSUI + erFUTA;
-
-  const f = 1 / periods;
-  const periodNames = {1:'Annual',12:'Monthly',24:'Semi-Monthly',26:'Bi-Weekly',52:'Weekly'};
-  document.getElementById('period-lbl').textContent =
-    periodNames[periods] + ' · ' + fmt(wages / periods) + ' gross per period';
-
-  document.getElementById('period-grid').innerHTML = `
-    <div class="result-card"><div class="rc-label">Social Security (EE)</div><div class="rc-val">${fmt(eeSS*f)}</div><div class="rc-sub">6.20% · $184,500 base</div></div>
-    <div class="result-card"><div class="rc-label">Medicare (EE)</div><div class="rc-val">${fmt((eeMed+eeAddlMed)*f)}</div><div class="rc-sub">1.45%${addlMed ? ' + 0.90% >$200K' : ' · no cap'}</div></div>
-    <div class="result-card"><div class="rc-label">PFML (EE)</div><div class="rc-val">${fmt(eePFML*f)}</div><div class="rc-sub">71.43% of 1.13%</div></div>
-    <div class="result-card"><div class="rc-label">WA Cares (EE)</div><div class="rc-val">${waExempt ? '$0.00' : fmt(eeWACares*f)}</div><div class="rc-sub">${waExempt ? 'Exemption on file' : '0.58% · no wage cap'}</div></div>
-    <div class="result-card total"><div class="rc-label">Total EE Deductions</div><div class="rc-val">${fmt(eeTot*f)}</div><div class="rc-sub">Per ${periodNames[periods].toLowerCase()}</div></div>
-    <div class="result-card"><div class="rc-label">Social Security (ER)</div><div class="rc-val">${fmt(erSS*f)}</div><div class="rc-sub">6.20% · $184,500 base</div></div>
-    <div class="result-card"><div class="rc-label">Medicare (ER)</div><div class="rc-val">${fmt(erMed*f)}</div><div class="rc-sub">1.45% · no cap</div></div>
-    <div class="result-card"><div class="rc-label">PFML (ER)</div><div class="rc-val">${fmt(erPFML*f)}</div><div class="rc-sub">${size === 'large' ? '28.57% of 1.13%' : 'Not req. — <50 EE'}</div></div>
-    <div class="result-card"><div class="rc-label">SUI + FUTA (ER est.)</div><div class="rc-val">${fmt((erSUI+erFUTA)*f)}</div><div class="rc-sub">SUI est. mid-range; FUTA 0.60%</div></div>
-    <div class="result-card total"><div class="rc-label">Total ER Cost (est.)</div><div class="rc-val">${fmt(erTot*f)}</div><div class="rc-sub">Per ${periodNames[periods].toLowerCase()}</div></div>
-  `;
-
-  document.getElementById('annual-grid').innerHTML = `
-    <div class="result-card total"><div class="rc-label">Annual EE Deductions</div><div class="rc-val">${fmt(eeTot)}</div><div class="rc-sub">Total withheld annually</div></div>
-    <div class="result-card total"><div class="rc-label">Annual ER Cost (est.)</div><div class="rc-val">${fmt(erTot)}</div><div class="rc-sub">Total employer-side cost</div></div>
-    <div class="result-card grand"><div class="rc-label">Total Annual Tax Cost</div><div class="rc-val">${fmt(eeTot+erTot)}</div><div class="rc-sub">EE + ER combined</div></div>
-  `;
-
-  document.getElementById('seattle-note').style.display = seattle ? 'block' : 'none';
-  document.getElementById('calc-results').style.display = 'block';
-}
+// Workers Comp SPF Data
+const workersCompData2026 = {
+  spfTotal: 0.1912,
+  spfEmployer: 0.0956,
+  spfEmployee: 0.0956,
+  ratesUrl: 'https://lni.wa.gov/insurance/rates-risk-classes/rates-for-workers-compensation/'
+};
 </script>
+
 </body>
 </html>
