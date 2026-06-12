@@ -863,7 +863,7 @@ main {
       <li><strong>PFML HB 2345 effective June 11, 2026</strong> — reallocates family vs. medical premium shares to align with IRS FICA guidance. Total premium and EE/ER split unchanged; payroll system deduction logic may need review.</li>
       <li><strong>Seattle JumpStart thresholds and tiers</strong> — 2026 business payroll threshold is $9,074,409 (CPI-adjusted per SMC 5.38). Full 3-tier × 2-band rate matrix applies; verify with Seattle City Finance annually.</li>
       <li><strong>Seattle Social Housing Tax transitions to quarterly filing</strong> for 2026 (2025 annual return due January 31, 2026).</li>
-      <li><strong>SB 6346 signed — WA Individual Income Tax effective January 1, 2028.</strong> Washington's first individual income tax (9.90% flat; $1,000,000 standard deduction; administered by DOR). Not yet in effect — no employer obligations for 2026. See the <button onclick="showTab('income2028', document.querySelector('[onclick*=income2028]'))" style="background:none;border:none;color:var(--teal-deep);text-decoration:underline;cursor:pointer;font-size:inherit;padding:0;">Individual Income Tax (2028)</button> tab.</li>
+      <li><strong>SB 6346 signed — WA Individual Income Tax effective January 1, 2028.</strong> Washington's first individual income tax: 9.90% on Washington taxable income above a $1,000,000 standard deduction (per individual; $1,000,000 combined for spouses/domestic partners). Effectively a threshold-based, single-rate tax on income above $1M — not a flat tax. Administered by DOR. Not yet in effect — no employer obligations for 2026. See the <button onclick="showTab('income2028', document.querySelector('[onclick*=income2028]'))" style="background:none;border:none;color:var(--teal-deep);text-decoration:underline;cursor:pointer;font-size:inherit;padding:0;">Individual Income Tax (2028)</button> tab.</li>
     </ul>
   </div>
 
@@ -1996,21 +1996,24 @@ main {
           <div class="card-name">Washington Individual Income Tax</div>
           <div class="card-sub">WA Dept. of Revenue &nbsp;·&nbsp; "Millionaires' Tax"</div>
         </div>
-        <div class="rate-box amber"><span class="rate-val">9.90%</span><span class="rate-lbl">Flat Rate</span></div>
+        <div class="rate-box amber"><span class="rate-val">9.90%</span><span class="rate-lbl">On Income &gt; $1M</span></div>
       </div>
       <div class="card-body">
         <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Tax Type: Individual Income Tax &nbsp;·&nbsp; Administered by WA DOR</div>
-        <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value amber">9.90% flat</span></div>
+        <div class="data-row"><span class="data-label">Tax Rate</span><span class="data-value amber">9.90% on Washington taxable income</span></div>
         <div class="data-row"><span class="data-label">Tax Base</span><span class="data-value">Washington taxable income</span></div>
-        <div class="data-row"><span class="data-label">Standard Deduction</span><span class="data-value teal">$1,000,000 per individual</span></div>
-        <div class="data-row"><span class="data-label">Married / Domestic Partners</span><span class="data-value">Combined $1,000,000 (joint or separate)</span></div>
+        <div class="data-row"><span class="data-label">Standard Deduction — Individual</span><span class="data-value teal">$1,000,000 per individual</span></div>
+        <div class="data-row"><span class="data-label">Standard Deduction — Spouses / Domestic Partners</span><span class="data-value amber">$1,000,000 combined (joint or separate)</span></div>
         <div class="data-row"><span class="data-label">Deduction Adjustment</span><span class="data-value">CPI-indexed; biennially beginning Oct 2029</span></div>
         <div class="data-row"><span class="data-label">Resident Scope</span><span class="data-value">All income, wherever derived</span></div>
         <div class="data-row"><span class="data-label">Nonresident Scope</span><span class="data-value">WA-source income only</span></div>
         <div class="data-row"><span class="data-label">Tax Year</span><span class="data-value">Calendar year — first tax year 2028</span></div>
         <div class="data-row"><span class="data-label">Administering Agency</span><span class="data-value">WA Department of Revenue (DOR)</span></div>
         <div class="callout info" style="margin-top:12px;">
-          <strong>Standard deduction mechanics:</strong> The $1,000,000 is a statutory deduction subtracted from Washington base income to arrive at Washington taxable income. The 9.90% rate is then applied to the remaining taxable income. Practical effect: no tax owed until income exceeds $1,000,000. The $1M figure is the standard deduction, not an exemption threshold or rate trigger.
+          <strong>Tax structure — not a flat tax:</strong> The 9.90% rate applies only to Washington taxable income — defined as Washington base income <em>after</em> the $1,000,000 standard deduction. The practical effect is a 0% rate on all income up to $1M, and 9.90% on every dollar above $1M. Statutorily, this is a single rate applied to a deduction-adjusted base; functionally it is a threshold-based tax on millionaires, not a flat tax on all income.
+        </div>
+        <div class="callout warn" style="margin-top:8px;">
+          <strong>Marriage penalty — Sec. 314:</strong> Spouses and state registered domestic partners share a combined $1,000,000 standard deduction regardless of whether they file jointly or separately. Two single individuals each earning $700,000 owe $0 tax. If they marry, their $1,400,000 combined income receives only a $1,000,000 combined deduction — making $400,000 taxable at 9.90% = approximately $39,600. This structural feature is explicit in the statute and is material for high-earning couples in Washington.
         </div>
         <div class="badge-row" style="margin-top:10px;">
           <a href="https://app.leg.wa.gov/billsummary/?BillNumber=6346&Year=2025&Initiative=false" target="_blank" class="agency-badge badge-rcw">SB 6346</a>
@@ -2301,8 +2304,25 @@ const jumpStartData2026 = {
   effectiveDate: '2026-01-01'
 };
 
-// Social Housing Tax Data
-const socialHousingData2026 = {
+// WA Individual Income Tax (SB 6346) — Effective January 1, 2028
+// NOT a flat tax — single rate applied to income above $1M standard deduction
+const incomeTax2028 = {
+  rate: 0.0990,
+  rateDescription: '9.90% on Washington taxable income (income above $1M standard deduction)',
+  structure: 'Single-rate threshold tax — 0% on income ≤$1M, 9.90% on income above $1M',
+  standardDeductionIndividual: 1000000,
+  standardDeductionCombined: 1000000, // Spouses/domestic partners share $1M regardless of filing status (Sec. 314)
+  effectiveDate: '2028-01-01',
+  firstReturnDue: '2029-04-15',
+  estimatedPaymentsRequiredAfter: '2029-07-01', // Sec. 501(6)
+  estimatedPaymentThreshold: 5000,
+  adminAgency: 'WA Department of Revenue (DOR)',
+  authority: 'Title 82A RCW / Chapter 238, Laws of 2026',
+  // Implementation formula (conceptual — statute defines WTI after deductions):
+  // Tax = max(0, WashingtonTaxableIncome) * 0.099
+  // Where WashingtonTaxableIncome = WashingtonBaseIncome - $1,000,000 deduction (individual)
+  //                                = WashingtonBaseIncome - $1,000,000 deduction (combined, spouses/DP)
+};
   rate: 0.05,
   compensationThreshold: 1000000,
   businessPayrollMinimum: null, // None
