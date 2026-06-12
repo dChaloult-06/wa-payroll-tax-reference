@@ -9,7 +9,7 @@
 
 ## What This Tool Is
 
-The Washington State Payroll Tax Reference is a free, publicly accessible reference tool for payroll professionals. It covers every 2026 payroll tax obligation in Washington State — rates, wage bases, statutory citations, agency guidance, nexus rules, and exemptions — with direct links to the primary sources so you can verify everything yourself.
+The Washington State Payroll Tax Reference is a free, publicly accessible reference tool for payroll professionals. It covers every 2026 payroll tax obligation in Washington State — rates, wage bases, statutory citations, agency guidance, nexus rules, and exemptions — with direct links to the primary sources so you can verify everything yourself. It also includes a dedicated tab for the Washington Individual Income Tax enacted by SB 6346, effective January 1, 2028.
 
 It is not a subscription service. It does not require a login. It works in any browser on any device.
 
@@ -27,13 +27,13 @@ It is not a subscription service. It does not require a login. It works in any b
 
 ## What It Covers
 
-The tool is organized into 10 sections, accessible from the navigation bar at the top of the page.
+The tool is organized into 11 sections, accessible from the navigation bar at the top of the page.
 
 ---
 
 ### Overview
 
-A summary of all 2026 Washington payroll tax obligations at a glance. Includes a "What Changed for 2026" section highlighting every rate change, legislative update, and new program effective this year. Start here if you need a quick orientation to the Washington payroll tax landscape.
+A summary of all 2026 Washington payroll tax obligations at a glance. Includes a "What Changed for 2026" section highlighting every rate change, legislative update, and new program effective this year — including a notice of SB 6346 (the Washington Millionaires' Tax, effective January 1, 2028). Start here if you need a quick orientation to the Washington payroll tax landscape.
 
 Program summary cards cover every major obligation including both Seattle local taxes — JumpStart and the Social Housing Tax.
 
@@ -136,13 +136,15 @@ Also covers what additional obligations activate when you register — including
 
 ### Reciprocity
 
-Washington has no personal income tax and therefore no formal reciprocity agreements with other states. This section explains what that means practically for:
+Washington currently has no personal income tax and therefore no formal income tax reciprocity agreements with other states. This section explains what that means practically for:
 
 - Washington residents working in Oregon or Idaho
 - Oregon and Idaho residents working in Washington
 - Employees who split time across state lines
 
 Also covers the federal four-part localization test used to determine which state has SUI and PFML jurisdiction for multi-state employees.
+
+**SB 6346 — New Reciprocity Authority (Effective January 1, 2028):** The Washington Millionaires' Tax creates Washington's first individual income tax and grants DOR explicit authority to negotiate income tax reciprocity agreements with other states. Sec. 203(2) of the bill authorizes DOR to enter agreements where, if another state exempts WA residents from tax on personal services income earned there, Washington will provide a reciprocal exemption for that state's residents on personal services income earned in Washington. No agreements have been established as of this writing. The Individual Income Tax (2028) tab provides full detail.
 
 ---
 
@@ -186,6 +188,34 @@ Note: The L&I Workers' Compensation links throughout the tool point to the offic
 
 ---
 
+### Individual Income Tax (2028)
+
+**Not yet in effect.** This tab covers Washington's first individual income tax — enacted by SB 6346 (Chapter 238, Laws of 2026; codified as Title 82A RCW), signed by Governor Ferguson on March 30, 2026, and effective January 1, 2028. The tab is focused on what payroll professionals and employers need to know, not a full taxpayer guide.
+
+**Tax structure:**
+- Rate: 9.90% flat on Washington taxable income
+- Standard deduction: $1,000,000 per individual (or $1,000,000 combined for married/domestic partners, regardless of filing status) — subtracted before applying the rate; this is the statutory standard deduction, not an exemption threshold or rate trigger; CPI-indexed biennially beginning October 2029
+- Administered by WA Department of Revenue (DOR) — not ESD or L&I
+- Residents taxed on all income; nonresidents taxed on WA-source income only
+
+**Filing and estimated payments:**
+- First tax year: 2028; first returns due April 2029 (mirrors federal due date)
+- Estimated payments required if liability exceeds $5,000
+- Estimated payments are not required before July 1, 2029 (Sec. 501(6)) — first tax year liability settles at annual filing
+
+**Employer obligations — current status (2026–2027):**
+No withholding, registration, or reporting is required now. DOR is directed by Sec. 501(5) to adopt rules for making estimated tax payments on wages subject to federal income tax withholding — these rules do not yet exist and could create employer withholding obligations before 2028. DOR must file an initial implementation report with the Legislature by December 15, 2026 and a final rules report by December 15, 2027.
+
+**Nonresident de minimis rule (Sec. 401(3)):** Nonresidents who perform services in Washington five or fewer days cumulatively in a calendar year have no Washington-source income allocated under this tax. Exceptions apply for professional athletes, student athletes, and entertainers.
+
+**Constitutional challenge:** SB 6346 is expected to face constitutional litigation before its effective date. The Washington Constitution has historically been interpreted to prohibit a graduated income tax; the bill's drafters framed it as an excise tax on the receipt of income — the same approach upheld for the WA Capital Gains Tax in *Quinn v. State* (2023). The tab includes a callout explaining the anticipated challenge and advising employers to avoid irreversible system configuration changes until legal status is resolved.
+
+**Reciprocity authority:** The bill grants DOR authority to negotiate reciprocity agreements with other states for personal services income (Sec. 203(2)). No agreements exist as of this writing. See also the Reciprocity tab.
+
+**Implementation timeline:** The tab includes a visual timeline of key dates: June 11, 2026 (statutory effective date); July 1, 2026 (DOR advisory group begins); December 15, 2026 (DOR initial report); December 15, 2027 (DOR final rules report); January 1, 2028 (tax effective date); April 2029 (first returns due); July 1, 2029 (estimated payments first required).
+
+---
+
 ### About
 
 Background on the tool and contact information. The About tab presents a focused description of the tool's purpose and origin, including its development through detailed analysis of Washington's payroll tax framework and the implementation of Seattle's local tax programs.
@@ -211,7 +241,7 @@ Throughout the tool, small colored badges appear on each card:
 | Pink — L&I | WA Dept. of Labor & Industries | Workers' Comp |
 | Amber — Seattle | Seattle City Finance | JumpStart, Social Housing |
 | Teal — RCW | WA Revised Code statute | Specific section citations |
-| Sage — DOR | WA Dept. of Revenue | B&O, Capital Gains |
+| Sage — DOR | WA Dept. of Revenue | B&O, Capital Gains, SB 6346 |
 | Green — IRS | Internal Revenue Service | Federal programs |
 | Purple — SSA | Social Security Administration | SS wage base |
 
@@ -220,6 +250,8 @@ Click any badge to go directly to the official source. All links open in a new t
 ---
 
 ## Important Notes
+
+**SB 6346 — Washington Individual Income Tax (2028):** This tax is not yet in effect. It is presented in a separate tab specifically to avoid confusion with current 2026 obligations. Employer withholding rules have not yet been issued by DOR. Legal challenges are anticipated. No employer action is required for 2026 or 2027; monitor DOR rulemaking and court proceedings before configuring payroll systems.
 
 **Verify before filing.** This tool is updated to reflect 2026 rates and legislative changes as of May 2026. Rates, thresholds, and program rules are subject to change. Always verify current requirements at official sources before making compliance decisions.
 
