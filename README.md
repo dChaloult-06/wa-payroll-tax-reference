@@ -22,6 +22,8 @@ A practitioner-built, source-linked interactive reference tool covering every 20
 
 No login required. Works in any browser.
 
+> **If links appear unresponsive:** open the URL directly in a new browser tab rather than navigating from within GitHub. Copy and paste: `https://dchaloult-06.github.io/wa-payroll-tax-reference`
+
 ---
 
 ## What's Covered
@@ -68,8 +70,8 @@ No login required. Works in any browser.
 
 Enacted March 30, 2026. **Not yet in effect.** Key facts for payroll professionals:
 
-- **Rate:** 9.90% flat on Washington taxable income
-- **Standard deduction:** $1,000,000 per individual (statutory deduction applied before the rate; not an exemption threshold)
+- **Rate:** 9.90% on Washington taxable income above the $1,000,000 standard deduction — threshold-based, not a flat tax
+- **Standard deduction:** $1,000,000 per individual; $1,000,000 combined for spouses/domestic partners regardless of filing status (Sec. 314)
 - **Effective date:** January 1, 2028 — first returns due April 2029
 - **Administered by:** WA Department of Revenue (DOR) — not ESD or L&I
 - **No employer withholding obligation yet** — DOR must still adopt withholding rules per Sec. 501(5)

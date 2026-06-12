@@ -193,7 +193,7 @@ Note: The L&I Workers' Compensation links throughout the tool point to the offic
 **Not yet in effect.** This tab covers Washington's first individual income tax — enacted by SB 6346 (Chapter 238, Laws of 2026; codified as Title 82A RCW), signed by Governor Ferguson on March 30, 2026, and effective January 1, 2028. The tab is focused on what payroll professionals and employers need to know, not a full taxpayer guide.
 
 **Tax structure:**
-- Rate: 9.90% flat on Washington taxable income
+- Rate: 9.90% on Washington taxable income above the $1,000,000 standard deduction — threshold-based, not a flat tax
 - Standard deduction: $1,000,000 per individual (or $1,000,000 combined for married/domestic partners, regardless of filing status) — subtracted before applying the rate; this is the statutory standard deduction, not an exemption threshold or rate trigger; CPI-indexed biennially beginning October 2029
 - Administered by WA Department of Revenue (DOR) — not ESD or L&I
 - Residents taxed on all income; nonresidents taxed on WA-source income only
